@@ -1,0 +1,12 @@
+osmnx
+networkx
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+torch
+torch_geometric
+tqdm
+pyyaml
+python-docx
