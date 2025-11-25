@@ -1,0 +1,2012 @@
+{
+  "aggregate": {
+    "pairs": 200,
+    "dijkstra_expanded_avg": 5765.58,
+    "a_star_expanded_avg": 1431.72,
+    "dijkstra_frontier_avg": 161.18,
+    "a_star_frontier_avg": 158.14,
+    "expansion_speedup": 4.027030424943424
+  },
+  "samples": [
+    {
+      "u": 11037467470,
+      "v": 65292201,
+      "dijkstra_dist": 9891.07163991255,
+      "a_star_dist": 9891.07163991255,
+      "dijkstra_expanded": 8706,
+      "a_star_expanded": 1833,
+      "dijkstra_max_frontier": 157,
+      "a_star_max_frontier": 308
+    },
+    {
+      "u": 65339635,
+      "v": 5020800957,
+      "dijkstra_dist": 9325.059136799659,
+      "a_star_dist": 9325.059136799659,
+      "dijkstra_expanded": 6584,
+      "a_star_expanded": 1207,
+      "dijkstra_max_frontier": 142,
+      "a_star_max_frontier": 285
+    },
+    {
+      "u": 13187897054,
+      "v": 65350547,
+      "dijkstra_dist": 6598.22498091684,
+      "a_star_dist": 6598.22498091684,
+      "dijkstra_expanded": 2803,
+      "a_star_expanded": 539,
+      "dijkstra_max_frontier": 131,
+      "a_star_max_frontier": 54
+    },
+    {
+      "u": 2715894998,
+      "v": 65333148,
+      "dijkstra_dist": 3293.6042375996435,
+      "a_star_dist": 3293.6042375996435,
+      "dijkstra_expanded": 1417,
+      "a_star_expanded": 99,
+      "dijkstra_max_frontier": 105,
+      "a_star_max_frontier": 36
+    },
+    {
+      "u": 65295740,
+      "v": 65329924,
+      "dijkstra_dist": 5132.312677207519,
+      "a_star_dist": 5132.312677207519,
+      "dijkstra_expanded": 4162,
+      "a_star_expanded": 727,
+      "dijkstra_max_frontier": 167,
+      "a_star_max_frontier": 104
+    },
+    {
+      "u": 65335345,
+      "v": 65302641,
+      "dijkstra_dist": 11914.171493113687,
+      "a_star_dist": 11914.171493113687,
+      "dijkstra_expanded": 10417,
+      "a_star_expanded": 3899,
+      "dijkstra_max_frontier": 173,
+      "a_star_max_frontier": 276
+    },
+    {
+      "u": 65303611,
+      "v": 65312350,
+      "dijkstra_dist": 1449.4267500522,
+      "a_star_dist": 1449.4267500522,
+      "dijkstra_expanded": 438,
+      "a_star_expanded": 80,
+      "dijkstra_max_frontier": 76,
+      "a_star_max_frontier": 41
+    },
+    {
+      "u": 65346430,
+      "v": 766948544,
+      "dijkstra_dist": 1023.2838621531228,
+      "a_star_dist": 1023.2838621531228,
+      "dijkstra_expanded": 212,
+      "a_star_expanded": 47,
+      "dijkstra_max_frontier": 54,
+      "a_star_max_frontier": 21
+    },
+    {
+      "u": 65307359,
+      "v": 293819410,
+      "dijkstra_dist": 10765.854911366056,
+      "a_star_dist": 10765.854911366056,
+      "dijkstra_expanded": 9706,
+      "a_star_expanded": 2397,
+      "dijkstra_max_frontier": 175,
+      "a_star_max_frontier": 339
+    },
+    {
+      "u": 420519029,
+      "v": 65344106,
+      "dijkstra_dist": 9146.869954153255,
+      "a_star_dist": 9146.869954153255,
+      "dijkstra_expanded": 7800,
+      "a_star_expanded": 2197,
+      "dijkstra_max_frontier": 172,
+      "a_star_max_frontier": 258
+    },
+    {
+      "u": 260494513,
+      "v": 65297818,
+      "dijkstra_dist": 6949.340755974121,
+      "a_star_dist": 6949.340755974121,
+      "dijkstra_expanded": 9831,
+      "a_star_expanded": 1100,
+      "dijkstra_max_frontier": 268,
+      "a_star_max_frontier": 167
+    },
+    {
+      "u": 440319317,
+      "v": 65302109,
+      "dijkstra_dist": 6430.78259257337,
+      "a_star_dist": 6430.78259257337,
+      "dijkstra_expanded": 4614,
+      "a_star_expanded": 1316,
+      "dijkstra_max_frontier": 172,
+      "a_star_max_frontier": 158
+    },
+    {
+      "u": 65289358,
+      "v": 65292745,
+      "dijkstra_dist": 4570.002699183547,
+      "a_star_dist": 4570.002699183547,
+      "dijkstra_expanded": 1994,
+      "a_star_expanded": 85,
+      "dijkstra_max_frontier": 134,
+      "a_star_max_frontier": 79
+    },
+    {
+      "u": 6392167831,
+      "v": 65295592,
+      "dijkstra_dist": 3935.9433611104814,
+      "a_star_dist": 3935.9433611104814,
+      "dijkstra_expanded": 2666,
+      "a_star_expanded": 583,
+      "dijkstra_max_frontier": 175,
+      "a_star_max_frontier": 77
+    },
+    {
+      "u": 4800142347,
+      "v": 258760426,
+      "dijkstra_dist": 1945.230445715239,
+      "a_star_dist": 1945.230445715239,
+      "dijkstra_expanded": 902,
+      "a_star_expanded": 57,
+      "dijkstra_max_frontier": 98,
+      "a_star_max_frontier": 46
+    },
+    {
+      "u": 2449915890,
+      "v": 65326186,
+      "dijkstra_dist": 3781.701800996544,
+      "a_star_dist": 3781.701800996544,
+      "dijkstra_expanded": 3329,
+      "a_star_expanded": 425,
+      "dijkstra_max_frontier": 189,
+      "a_star_max_frontier": 80
+    },
+    {
+      "u": 65339584,
+      "v": 65336860,
+      "dijkstra_dist": 8531.560882126434,
+      "a_star_dist": 8531.560882126434,
+      "dijkstra_expanded": 7578,
+      "a_star_expanded": 2210,
+      "dijkstra_max_frontier": 175,
+      "a_star_max_frontier": 235
+    },
+    {
+      "u": 65368470,
+      "v": 65298164,
+      "dijkstra_dist": 10124.436637159071,
+      "a_star_dist": 10124.436637159071,
+      "dijkstra_expanded": 8798,
+      "a_star_expanded": 2551,
+      "dijkstra_max_frontier": 195,
+      "a_star_max_frontier": 198
+    },
+    {
+      "u": 4009068062,
+      "v": 65337486,
+      "dijkstra_dist": 10386.715117590986,
+      "a_star_dist": 10386.715117590986,
+      "dijkstra_expanded": 8867,
+      "a_star_expanded": 3797,
+      "dijkstra_max_frontier": 169,
+      "a_star_max_frontier": 220
+    },
+    {
+      "u": 65333496,
+      "v": 257316381,
+      "dijkstra_dist": 5956.430372518861,
+      "a_star_dist": 5956.430372518861,
+      "dijkstra_expanded": 7685,
+      "a_star_expanded": 859,
+      "dijkstra_max_frontier": 299,
+      "a_star_max_frontier": 158
+    },
+    {
+      "u": 4034123036,
+      "v": 65330342,
+      "dijkstra_dist": 4178.1016504036115,
+      "a_star_dist": 4178.1016504036115,
+      "dijkstra_expanded": 1525,
+      "a_star_expanded": 249,
+      "dijkstra_max_frontier": 95,
+      "a_star_max_frontier": 129
+    },
+    {
+      "u": 65287347,
+      "v": 65344363,
+      "dijkstra_dist": 10592.840937788147,
+      "a_star_dist": 10592.840937788147,
+      "dijkstra_expanded": 10423,
+      "a_star_expanded": 3766,
+      "dijkstra_max_frontier": 182,
+      "a_star_max_frontier": 309
+    },
+    {
+      "u": 65317603,
+      "v": 65293542,
+      "dijkstra_dist": 1188.9851387024169,
+      "a_star_dist": 1188.9851387024169,
+      "dijkstra_expanded": 354,
+      "a_star_expanded": 41,
+      "dijkstra_max_frontier": 66,
+      "a_star_max_frontier": 27
+    },
+    {
+      "u": 258759756,
+      "v": 4014191230,
+      "dijkstra_dist": 599.4382004594545,
+      "a_star_dist": 599.4382004594545,
+      "dijkstra_expanded": 71,
+      "a_star_expanded": 13,
+      "dijkstra_max_frontier": 31,
+      "a_star_max_frontier": 9
+    },
+    {
+      "u": 318299420,
+      "v": 65293217,
+      "dijkstra_dist": 3575.349781347927,
+      "a_star_dist": 3575.349781347927,
+      "dijkstra_expanded": 3022,
+      "a_star_expanded": 350,
+      "dijkstra_max_frontier": 193,
+      "a_star_max_frontier": 98
+    },
+    {
+      "u": 12450268650,
+      "v": 9691602656,
+      "dijkstra_dist": 5102.730334663512,
+      "a_star_dist": 5102.730334663512,
+      "dijkstra_expanded": 2346,
+      "a_star_expanded": 719,
+      "dijkstra_max_frontier": 105,
+      "a_star_max_frontier": 74
+    },
+    {
+      "u": 65313610,
+      "v": 984720636,
+      "dijkstra_dist": 7559.947265238967,
+      "a_star_dist": 7559.947265238967,
+      "dijkstra_expanded": 5534,
+      "a_star_expanded": 1819,
+      "dijkstra_max_frontier": 144,
+      "a_star_max_frontier": 206
+    },
+    {
+      "u": 9602564569,
+      "v": 65329454,
+      "dijkstra_dist": 9887.897861919428,
+      "a_star_dist": 9887.897861919428,
+      "dijkstra_expanded": 10535,
+      "a_star_expanded": 3554,
+      "dijkstra_max_frontier": 190,
+      "a_star_max_frontier": 250
+    },
+    {
+      "u": 258964133,
+      "v": 65351384,
+      "dijkstra_dist": 9745.528172391992,
+      "a_star_dist": 9745.528172391992,
+      "dijkstra_expanded": 8447,
+      "a_star_expanded": 2591,
+      "dijkstra_max_frontier": 155,
+      "a_star_max_frontier": 294
+    },
+    {
+      "u": 1711296535,
+      "v": 595495874,
+      "dijkstra_dist": 10101.467440960412,
+      "a_star_dist": 10101.467440960412,
+      "dijkstra_expanded": 9752,
+      "a_star_expanded": 3434,
+      "dijkstra_max_frontier": 183,
+      "a_star_max_frontier": 278
+    },
+    {
+      "u": 65293898,
+      "v": 6353362216,
+      "dijkstra_dist": 7911.925147346691,
+      "a_star_dist": 7911.925147346691,
+      "dijkstra_expanded": 9380,
+      "a_star_expanded": 1702,
+      "dijkstra_max_frontier": 218,
+      "a_star_max_frontier": 219
+    },
+    {
+      "u": 5024250713,
+      "v": 65325208,
+      "dijkstra_dist": 6480.927669202287,
+      "a_star_dist": 6480.927669202287,
+      "dijkstra_expanded": 6345,
+      "a_star_expanded": 914,
+      "dijkstra_max_frontier": 180,
+      "a_star_max_frontier": 157
+    },
+    {
+      "u": 258757484,
+      "v": 65314572,
+      "dijkstra_dist": 7281.153455482695,
+      "a_star_dist": 7281.153455482695,
+      "dijkstra_expanded": 5731,
+      "a_star_expanded": 1489,
+      "dijkstra_max_frontier": 174,
+      "a_star_max_frontier": 148
+    },
+    {
+      "u": 65324110,
+      "v": 766913254,
+      "dijkstra_dist": 1033.2146284566286,
+      "a_star_dist": 1033.2146284566286,
+      "dijkstra_expanded": 170,
+      "a_star_expanded": 63,
+      "dijkstra_max_frontier": 40,
+      "a_star_max_frontier": 17
+    },
+    {
+      "u": 65325497,
+      "v": 65346922,
+      "dijkstra_dist": 4133.518059718542,
+      "a_star_dist": 4133.518059718542,
+      "dijkstra_expanded": 3803,
+      "a_star_expanded": 505,
+      "dijkstra_max_frontier": 225,
+      "a_star_max_frontier": 89
+    },
+    {
+      "u": 65294611,
+      "v": 65314847,
+      "dijkstra_dist": 2863.0954535479655,
+      "a_star_dist": 2863.0954535479655,
+      "dijkstra_expanded": 1675,
+      "a_star_expanded": 204,
+      "dijkstra_max_frontier": 135,
+      "a_star_max_frontier": 83
+    },
+    {
+      "u": 65315486,
+      "v": 302034830,
+      "dijkstra_dist": 1280.137694657516,
+      "a_star_dist": 1280.137694657516,
+      "dijkstra_expanded": 327,
+      "a_star_expanded": 23,
+      "dijkstra_max_frontier": 79,
+      "a_star_max_frontier": 18
+    },
+    {
+      "u": 65299217,
+      "v": 6358812313,
+      "dijkstra_dist": 7432.110641846324,
+      "a_star_dist": 7432.110641846324,
+      "dijkstra_expanded": 9245,
+      "a_star_expanded": 1716,
+      "dijkstra_max_frontier": 208,
+      "a_star_max_frontier": 223
+    },
+    {
+      "u": 258756008,
+      "v": 5863003876,
+      "dijkstra_dist": 5166.540432315164,
+      "a_star_dist": 5166.540432315164,
+      "dijkstra_expanded": 3708,
+      "a_star_expanded": 508,
+      "dijkstra_max_frontier": 173,
+      "a_star_max_frontier": 99
+    },
+    {
+      "u": 258911640,
+      "v": 65303723,
+      "dijkstra_dist": 8652.211159602928,
+      "a_star_dist": 8652.211159602928,
+      "dijkstra_expanded": 7779,
+      "a_star_expanded": 1601,
+      "dijkstra_max_frontier": 179,
+      "a_star_max_frontier": 173
+    },
+    {
+      "u": 5858516712,
+      "v": 7231176095,
+      "dijkstra_dist": 3816.9336652938623,
+      "a_star_dist": 3816.9336652938623,
+      "dijkstra_expanded": 3908,
+      "a_star_expanded": 408,
+      "dijkstra_max_frontier": 220,
+      "a_star_max_frontier": 106
+    },
+    {
+      "u": 65323713,
+      "v": 300759042,
+      "dijkstra_dist": 9303.090803931274,
+      "a_star_dist": 9303.090803931274,
+      "dijkstra_expanded": 9356,
+      "a_star_expanded": 1862,
+      "dijkstra_max_frontier": 179,
+      "a_star_max_frontier": 285
+    },
+    {
+      "u": 65306604,
+      "v": 65297725,
+      "dijkstra_dist": 6285.542505984853,
+      "a_star_dist": 6285.542505984853,
+      "dijkstra_expanded": 4952,
+      "a_star_expanded": 998,
+      "dijkstra_max_frontier": 194,
+      "a_star_max_frontier": 93
+    },
+    {
+      "u": 65303620,
+      "v": 65310974,
+      "dijkstra_dist": 3028.233414284601,
+      "a_star_dist": 3028.233414284601,
+      "dijkstra_expanded": 1861,
+      "a_star_expanded": 149,
+      "dijkstra_max_frontier": 139,
+      "a_star_max_frontier": 51
+    },
+    {
+      "u": 65340964,
+      "v": 4019282333,
+      "dijkstra_dist": 8148.254372009843,
+      "a_star_dist": 8148.254372009843,
+      "dijkstra_expanded": 6175,
+      "a_star_expanded": 1941,
+      "dijkstra_max_frontier": 163,
+      "a_star_max_frontier": 128
+    },
+    {
+      "u": 65321670,
+      "v": 65326536,
+      "dijkstra_dist": 8003.143446244396,
+      "a_star_dist": 8003.143446244396,
+      "dijkstra_expanded": 7522,
+      "a_star_expanded": 816,
+      "dijkstra_max_frontier": 186,
+      "a_star_max_frontier": 203
+    },
+    {
+      "u": 65334611,
+      "v": 65306173,
+      "dijkstra_dist": 1692.6844337448747,
+      "a_star_dist": 1692.6844337448747,
+      "dijkstra_expanded": 340,
+      "a_star_expanded": 50,
+      "dijkstra_max_frontier": 63,
+      "a_star_max_frontier": 23
+    },
+    {
+      "u": 65327408,
+      "v": 371251238,
+      "dijkstra_dist": 1186.8009188695758,
+      "a_star_dist": 1186.8009188695758,
+      "dijkstra_expanded": 178,
+      "a_star_expanded": 65,
+      "dijkstra_max_frontier": 38,
+      "a_star_max_frontier": 25
+    },
+    {
+      "u": 65334576,
+      "v": 65334133,
+      "dijkstra_dist": 8353.558345325784,
+      "a_star_dist": 8353.558345325784,
+      "dijkstra_expanded": 9559,
+      "a_star_expanded": 2264,
+      "dijkstra_max_frontier": 204,
+      "a_star_max_frontier": 299
+    },
+    {
+      "u": 258755562,
+      "v": 65322339,
+      "dijkstra_dist": 4742.696552764361,
+      "a_star_dist": 4742.696552764361,
+      "dijkstra_expanded": 3902,
+      "a_star_expanded": 499,
+      "dijkstra_max_frontier": 176,
+      "a_star_max_frontier": 145
+    },
+    {
+      "u": 4023078344,
+      "v": 65282059,
+      "dijkstra_dist": 9544.897135183906,
+      "a_star_dist": 9544.897135183906,
+      "dijkstra_expanded": 10066,
+      "a_star_expanded": 1955,
+      "dijkstra_max_frontier": 182,
+      "a_star_max_frontier": 221
+    },
+    {
+      "u": 65312126,
+      "v": 65303500,
+      "dijkstra_dist": 6342.3076486262535,
+      "a_star_dist": 6342.3076486262535,
+      "dijkstra_expanded": 9163,
+      "a_star_expanded": 676,
+      "dijkstra_max_frontier": 302,
+      "a_star_max_frontier": 213
+    },
+    {
+      "u": 65309776,
+      "v": 581961285,
+      "dijkstra_dist": 7599.626713077599,
+      "a_star_dist": 7599.626713077599,
+      "dijkstra_expanded": 4890,
+      "a_star_expanded": 1458,
+      "dijkstra_max_frontier": 155,
+      "a_star_max_frontier": 166
+    },
+    {
+      "u": 5826304533,
+      "v": 4062468479,
+      "dijkstra_dist": 11645.815567405778,
+      "a_star_dist": 11645.815567405778,
+      "dijkstra_expanded": 10952,
+      "a_star_expanded": 3373,
+      "dijkstra_max_frontier": 165,
+      "a_star_max_frontier": 319
+    },
+    {
+      "u": 65316314,
+      "v": 5826353947,
+      "dijkstra_dist": 13886.048196841373,
+      "a_star_dist": 13886.048196841373,
+      "dijkstra_expanded": 11555,
+      "a_star_expanded": 7621,
+      "dijkstra_max_frontier": 192,
+      "a_star_max_frontier": 411
+    },
+    {
+      "u": 5840630958,
+      "v": 65307767,
+      "dijkstra_dist": 10040.527593800041,
+      "a_star_dist": 10040.527593800041,
+      "dijkstra_expanded": 10109,
+      "a_star_expanded": 1860,
+      "dijkstra_max_frontier": 177,
+      "a_star_max_frontier": 358
+    },
+    {
+      "u": 65333147,
+      "v": 65324866,
+      "dijkstra_dist": 5608.840677373191,
+      "a_star_dist": 5608.840677373191,
+      "dijkstra_expanded": 3502,
+      "a_star_expanded": 539,
+      "dijkstra_max_frontier": 127,
+      "a_star_max_frontier": 115
+    },
+    {
+      "u": 386844923,
+      "v": 65326722,
+      "dijkstra_dist": 8010.747260799511,
+      "a_star_dist": 8010.747260799511,
+      "dijkstra_expanded": 7436,
+      "a_star_expanded": 1184,
+      "dijkstra_max_frontier": 151,
+      "a_star_max_frontier": 214
+    },
+    {
+      "u": 1563110148,
+      "v": 2841581043,
+      "dijkstra_dist": 3171.6627432155556,
+      "a_star_dist": 3171.6627432155556,
+      "dijkstra_expanded": 1326,
+      "a_star_expanded": 271,
+      "dijkstra_max_frontier": 120,
+      "a_star_max_frontier": 75
+    },
+    {
+      "u": 65311792,
+      "v": 65305105,
+      "dijkstra_dist": 9364.102533112859,
+      "a_star_dist": 9364.102533112859,
+      "dijkstra_expanded": 11428,
+      "a_star_expanded": 2467,
+      "dijkstra_max_frontier": 258,
+      "a_star_max_frontier": 204
+    },
+    {
+      "u": 65293678,
+      "v": 11037467466,
+      "dijkstra_dist": 7648.259639857732,
+      "a_star_dist": 7648.259639857732,
+      "dijkstra_expanded": 10992,
+      "a_star_expanded": 2371,
+      "dijkstra_max_frontier": 329,
+      "a_star_max_frontier": 228
+    },
+    {
+      "u": 65298367,
+      "v": 65296774,
+      "dijkstra_dist": 3794.1808780456504,
+      "a_star_dist": 3794.1808780456504,
+      "dijkstra_expanded": 2977,
+      "a_star_expanded": 382,
+      "dijkstra_max_frontier": 172,
+      "a_star_max_frontier": 92
+    },
+    {
+      "u": 10712988204,
+      "v": 65304062,
+      "dijkstra_dist": 2143.2586695181594,
+      "a_star_dist": 2143.2586695181594,
+      "dijkstra_expanded": 979,
+      "a_star_expanded": 73,
+      "dijkstra_max_frontier": 119,
+      "a_star_max_frontier": 36
+    },
+    {
+      "u": 9691602686,
+      "v": 960100247,
+      "dijkstra_dist": 4835.7737017845975,
+      "a_star_dist": 4835.7737017845975,
+      "dijkstra_expanded": 3760,
+      "a_star_expanded": 947,
+      "dijkstra_max_frontier": 128,
+      "a_star_max_frontier": 151
+    },
+    {
+      "u": 2600919806,
+      "v": 65298193,
+      "dijkstra_dist": 4075.5305363450248,
+      "a_star_dist": 4075.5305363450248,
+      "dijkstra_expanded": 2337,
+      "a_star_expanded": 102,
+      "dijkstra_max_frontier": 177,
+      "a_star_max_frontier": 65
+    },
+    {
+      "u": 65279965,
+      "v": 65303556,
+      "dijkstra_dist": 8208.71495429343,
+      "a_star_dist": 8208.71495429343,
+      "dijkstra_expanded": 5809,
+      "a_star_expanded": 1104,
+      "dijkstra_max_frontier": 145,
+      "a_star_max_frontier": 166
+    },
+    {
+      "u": 65291149,
+      "v": 4044864367,
+      "dijkstra_dist": 9852.702163108925,
+      "a_star_dist": 9852.702163108925,
+      "dijkstra_expanded": 8952,
+      "a_star_expanded": 3375,
+      "dijkstra_max_frontier": 153,
+      "a_star_max_frontier": 237
+    },
+    {
+      "u": 65341406,
+      "v": 65337003,
+      "dijkstra_dist": 6134.966597071169,
+      "a_star_dist": 6134.966597071169,
+      "dijkstra_expanded": 7015,
+      "a_star_expanded": 191,
+      "dijkstra_max_frontier": 214,
+      "a_star_max_frontier": 123
+    },
+    {
+      "u": 65345867,
+      "v": 65320255,
+      "dijkstra_dist": 5468.7915522820795,
+      "a_star_dist": 5468.7915522820795,
+      "dijkstra_expanded": 4979,
+      "a_star_expanded": 918,
+      "dijkstra_max_frontier": 199,
+      "a_star_max_frontier": 109
+    },
+    {
+      "u": 4008988541,
+      "v": 8164502095,
+      "dijkstra_dist": 6343.980425690113,
+      "a_star_dist": 6343.980425690113,
+      "dijkstra_expanded": 4310,
+      "a_star_expanded": 1242,
+      "dijkstra_max_frontier": 134,
+      "a_star_max_frontier": 112
+    },
+    {
+      "u": 1211585321,
+      "v": 703454966,
+      "dijkstra_dist": 3379.7304390358504,
+      "a_star_dist": 3379.7304390358504,
+      "dijkstra_expanded": 1904,
+      "a_star_expanded": 194,
+      "dijkstra_max_frontier": 152,
+      "a_star_max_frontier": 61
+    },
+    {
+      "u": 9691602630,
+      "v": 65310823,
+      "dijkstra_dist": 2190.1158198788034,
+      "a_star_dist": 2190.1158198788034,
+      "dijkstra_expanded": 1368,
+      "a_star_expanded": 184,
+      "dijkstra_max_frontier": 133,
+      "a_star_max_frontier": 52
+    },
+    {
+      "u": 65306711,
+      "v": 6375094234,
+      "dijkstra_dist": 5969.497304476501,
+      "a_star_dist": 5969.497304476501,
+      "dijkstra_expanded": 3478,
+      "a_star_expanded": 214,
+      "dijkstra_max_frontier": 132,
+      "a_star_max_frontier": 76
+    },
+    {
+      "u": 764912790,
+      "v": 5330747076,
+      "dijkstra_dist": 5855.944308736505,
+      "a_star_dist": 5855.944308736505,
+      "dijkstra_expanded": 5521,
+      "a_star_expanded": 776,
+      "dijkstra_max_frontier": 223,
+      "a_star_max_frontier": 136
+    },
+    {
+      "u": 65329277,
+      "v": 65339101,
+      "dijkstra_dist": 9897.885949909174,
+      "a_star_dist": 9897.885949909174,
+      "dijkstra_expanded": 8907,
+      "a_star_expanded": 2835,
+      "dijkstra_max_frontier": 168,
+      "a_star_max_frontier": 275
+    },
+    {
+      "u": 1511349540,
+      "v": 258929532,
+      "dijkstra_dist": 4816.840448901125,
+      "a_star_dist": 4816.840448901125,
+      "dijkstra_expanded": 4200,
+      "a_star_expanded": 523,
+      "dijkstra_max_frontier": 215,
+      "a_star_max_frontier": 113
+    },
+    {
+      "u": 10790836782,
+      "v": 1677788942,
+      "dijkstra_dist": 1583.036871667325,
+      "a_star_dist": 1583.036871667325,
+      "dijkstra_expanded": 452,
+      "a_star_expanded": 20,
+      "dijkstra_max_frontier": 70,
+      "a_star_max_frontier": 26
+    },
+    {
+      "u": 65317058,
+      "v": 764886902,
+      "dijkstra_dist": 7258.077477511958,
+      "a_star_dist": 7258.077477511958,
+      "dijkstra_expanded": 6126,
+      "a_star_expanded": 1600,
+      "dijkstra_max_frontier": 179,
+      "a_star_max_frontier": 193
+    },
+    {
+      "u": 65295367,
+      "v": 3742028847,
+      "dijkstra_dist": 4839.014920090094,
+      "a_star_dist": 4839.014920090094,
+      "dijkstra_expanded": 4498,
+      "a_star_expanded": 577,
+      "dijkstra_max_frontier": 163,
+      "a_star_max_frontier": 102
+    },
+    {
+      "u": 65307440,
+      "v": 65312645,
+      "dijkstra_dist": 3213.9684998383636,
+      "a_star_dist": 3213.9684998383636,
+      "dijkstra_expanded": 2434,
+      "a_star_expanded": 343,
+      "dijkstra_max_frontier": 133,
+      "a_star_max_frontier": 67
+    },
+    {
+      "u": 65306774,
+      "v": 4069129312,
+      "dijkstra_dist": 4698.190452742371,
+      "a_star_dist": 4698.190452742371,
+      "dijkstra_expanded": 4392,
+      "a_star_expanded": 420,
+      "dijkstra_max_frontier": 221,
+      "a_star_max_frontier": 112
+    },
+    {
+      "u": 766898798,
+      "v": 65308746,
+      "dijkstra_dist": 3645.27519849579,
+      "a_star_dist": 3645.27519849579,
+      "dijkstra_expanded": 2865,
+      "a_star_expanded": 204,
+      "dijkstra_max_frontier": 194,
+      "a_star_max_frontier": 88
+    },
+    {
+      "u": 65304062,
+      "v": 65369127,
+      "dijkstra_dist": 2719.3912058751343,
+      "a_star_dist": 2719.3912058751343,
+      "dijkstra_expanded": 1832,
+      "a_star_expanded": 170,
+      "dijkstra_max_frontier": 144,
+      "a_star_max_frontier": 70
+    },
+    {
+      "u": 65295361,
+      "v": 9094199672,
+      "dijkstra_dist": 6261.380057736505,
+      "a_star_dist": 6261.380057736505,
+      "dijkstra_expanded": 6074,
+      "a_star_expanded": 915,
+      "dijkstra_max_frontier": 165,
+      "a_star_max_frontier": 174
+    },
+    {
+      "u": 298940440,
+      "v": 65346411,
+      "dijkstra_dist": 2931.3272418768493,
+      "a_star_dist": 2931.3272418768493,
+      "dijkstra_expanded": 866,
+      "a_star_expanded": 220,
+      "dijkstra_max_frontier": 97,
+      "a_star_max_frontier": 58
+    },
+    {
+      "u": 65354542,
+      "v": 612025486,
+      "dijkstra_dist": 7664.398961266196,
+      "a_star_dist": 7664.398961266196,
+      "dijkstra_expanded": 10934,
+      "a_star_expanded": 1989,
+      "dijkstra_max_frontier": 274,
+      "a_star_max_frontier": 190
+    },
+    {
+      "u": 65344056,
+      "v": 65326282,
+      "dijkstra_dist": 15839.738742208294,
+      "a_star_dist": 15839.738742208294,
+      "dijkstra_expanded": 7757,
+      "a_star_expanded": 2385,
+      "dijkstra_max_frontier": 156,
+      "a_star_max_frontier": 196
+    },
+    {
+      "u": 258758544,
+      "v": 65297262,
+      "dijkstra_dist": 1793.9099077984622,
+      "a_star_dist": 1793.9099077984622,
+      "dijkstra_expanded": 785,
+      "a_star_expanded": 62,
+      "dijkstra_max_frontier": 94,
+      "a_star_max_frontier": 44
+    },
+    {
+      "u": 65327996,
+      "v": 2320368479,
+      "dijkstra_dist": 3801.018228805723,
+      "a_star_dist": 3801.018228805723,
+      "dijkstra_expanded": 2268,
+      "a_star_expanded": 332,
+      "dijkstra_max_frontier": 139,
+      "a_star_max_frontier": 68
+    },
+    {
+      "u": 258911590,
+      "v": 65301243,
+      "dijkstra_dist": 8016.080431781512,
+      "a_star_dist": 8016.080431781512,
+      "dijkstra_expanded": 8814,
+      "a_star_expanded": 1433,
+      "dijkstra_max_frontier": 193,
+      "a_star_max_frontier": 186
+    },
+    {
+      "u": 65311875,
+      "v": 297838768,
+      "dijkstra_dist": 2131.123419156193,
+      "a_star_dist": 2131.123419156193,
+      "dijkstra_expanded": 595,
+      "a_star_expanded": 139,
+      "dijkstra_max_frontier": 59,
+      "a_star_max_frontier": 55
+    },
+    {
+      "u": 65341397,
+      "v": 65329677,
+      "dijkstra_dist": 4648.096158932899,
+      "a_star_dist": 4648.096158932899,
+      "dijkstra_expanded": 5050,
+      "a_star_expanded": 854,
+      "dijkstra_max_frontier": 237,
+      "a_star_max_frontier": 95
+    },
+    {
+      "u": 65315489,
+      "v": 298082943,
+      "dijkstra_dist": 2488.1772507275705,
+      "a_star_dist": 2488.1772507275705,
+      "dijkstra_expanded": 1378,
+      "a_star_expanded": 278,
+      "dijkstra_max_frontier": 118,
+      "a_star_max_frontier": 80
+    },
+    {
+      "u": 65332236,
+      "v": 1718880014,
+      "dijkstra_dist": 6939.248097955927,
+      "a_star_dist": 6939.248097955927,
+      "dijkstra_expanded": 6563,
+      "a_star_expanded": 606,
+      "dijkstra_max_frontier": 176,
+      "a_star_max_frontier": 160
+    },
+    {
+      "u": 65302761,
+      "v": 65290100,
+      "dijkstra_dist": 7654.550737180116,
+      "a_star_dist": 7654.550737180116,
+      "dijkstra_expanded": 9676,
+      "a_star_expanded": 1494,
+      "dijkstra_max_frontier": 237,
+      "a_star_max_frontier": 164
+    },
+    {
+      "u": 65308380,
+      "v": 65295239,
+      "dijkstra_dist": 2720.803564176263,
+      "a_star_dist": 2720.803564176263,
+      "dijkstra_expanded": 748,
+      "a_star_expanded": 119,
+      "dijkstra_max_frontier": 68,
+      "a_star_max_frontier": 34
+    },
+    {
+      "u": 258964516,
+      "v": 258759746,
+      "dijkstra_dist": 7791.576776388781,
+      "a_star_dist": 7791.576776388781,
+      "dijkstra_expanded": 6456,
+      "a_star_expanded": 2142,
+      "dijkstra_max_frontier": 151,
+      "a_star_max_frontier": 223
+    },
+    {
+      "u": 65317750,
+      "v": 65364774,
+      "dijkstra_dist": 8327.880004251983,
+      "a_star_dist": 8327.880004251983,
+      "dijkstra_expanded": 9679,
+      "a_star_expanded": 1353,
+      "dijkstra_max_frontier": 193,
+      "a_star_max_frontier": 196
+    },
+    {
+      "u": 65307471,
+      "v": 4022924683,
+      "dijkstra_dist": 2632.5486819860535,
+      "a_star_dist": 2632.5486819860535,
+      "dijkstra_expanded": 1150,
+      "a_star_expanded": 255,
+      "dijkstra_max_frontier": 109,
+      "a_star_max_frontier": 54
+    },
+    {
+      "u": 1148372849,
+      "v": 65343958,
+      "dijkstra_dist": 3972.03604489295,
+      "a_star_dist": 3972.03604489295,
+      "dijkstra_expanded": 3085,
+      "a_star_expanded": 543,
+      "dijkstra_max_frontier": 150,
+      "a_star_max_frontier": 87
+    },
+    {
+      "u": 65290236,
+      "v": 65309754,
+      "dijkstra_dist": 10173.205560257824,
+      "a_star_dist": 10173.205560257824,
+      "dijkstra_expanded": 10940,
+      "a_star_expanded": 1842,
+      "dijkstra_max_frontier": 174,
+      "a_star_max_frontier": 304
+    },
+    {
+      "u": 297860859,
+      "v": 65328354,
+      "dijkstra_dist": 3003.61872979729,
+      "a_star_dist": 3003.61872979729,
+      "dijkstra_expanded": 2312,
+      "a_star_expanded": 101,
+      "dijkstra_max_frontier": 149,
+      "a_star_max_frontier": 76
+    },
+    {
+      "u": 5318468081,
+      "v": 6329528587,
+      "dijkstra_dist": 1802.9774679242473,
+      "a_star_dist": 1802.9774679242473,
+      "dijkstra_expanded": 605,
+      "a_star_expanded": 72,
+      "dijkstra_max_frontier": 73,
+      "a_star_max_frontier": 32
+    },
+    {
+      "u": 65300536,
+      "v": 65290229,
+      "dijkstra_dist": 5798.077940091499,
+      "a_star_dist": 5798.077940091499,
+      "dijkstra_expanded": 3861,
+      "a_star_expanded": 432,
+      "dijkstra_max_frontier": 121,
+      "a_star_max_frontier": 104
+    },
+    {
+      "u": 65335720,
+      "v": 65305773,
+      "dijkstra_dist": 8100.934068438896,
+      "a_star_dist": 8100.934068438896,
+      "dijkstra_expanded": 11031,
+      "a_star_expanded": 2033,
+      "dijkstra_max_frontier": 232,
+      "a_star_max_frontier": 169
+    },
+    {
+      "u": 65373779,
+      "v": 65316538,
+      "dijkstra_dist": 13469.928567400631,
+      "a_star_dist": 13469.928567400631,
+      "dijkstra_expanded": 10505,
+      "a_star_expanded": 4685,
+      "dijkstra_max_frontier": 173,
+      "a_star_max_frontier": 308
+    },
+    {
+      "u": 65284190,
+      "v": 65360902,
+      "dijkstra_dist": 3945.9283905385837,
+      "a_star_dist": 3945.9283905385837,
+      "dijkstra_expanded": 1562,
+      "a_star_expanded": 341,
+      "dijkstra_max_frontier": 95,
+      "a_star_max_frontier": 76
+    },
+    {
+      "u": 65307287,
+      "v": 65305776,
+      "dijkstra_dist": 5439.588131160254,
+      "a_star_dist": 5439.588131160254,
+      "dijkstra_expanded": 5673,
+      "a_star_expanded": 630,
+      "dijkstra_max_frontier": 217,
+      "a_star_max_frontier": 111
+    },
+    {
+      "u": 65346029,
+      "v": 3714677160,
+      "dijkstra_dist": 6868.017129437656,
+      "a_star_dist": 6868.017129437656,
+      "dijkstra_expanded": 7735,
+      "a_star_expanded": 1641,
+      "dijkstra_max_frontier": 198,
+      "a_star_max_frontier": 121
+    },
+    {
+      "u": 2726269055,
+      "v": 65285650,
+      "dijkstra_dist": 11930.59922661944,
+      "a_star_dist": 11930.59922661944,
+      "dijkstra_expanded": 10218,
+      "a_star_expanded": 4476,
+      "dijkstra_max_frontier": 186,
+      "a_star_max_frontier": 191
+    },
+    {
+      "u": 65369260,
+      "v": 65311028,
+      "dijkstra_dist": 1804.3195699325804,
+      "a_star_dist": 1804.3195699325804,
+      "dijkstra_expanded": 580,
+      "a_star_expanded": 142,
+      "dijkstra_max_frontier": 95,
+      "a_star_max_frontier": 47
+    },
+    {
+      "u": 258758551,
+      "v": 65288321,
+      "dijkstra_dist": 9441.671760817278,
+      "a_star_dist": 9441.671760817278,
+      "dijkstra_expanded": 10474,
+      "a_star_expanded": 3072,
+      "dijkstra_max_frontier": 200,
+      "a_star_max_frontier": 211
+    },
+    {
+      "u": 9244324890,
+      "v": 65318522,
+      "dijkstra_dist": 15559.918339296135,
+      "a_star_dist": 15559.918339296135,
+      "dijkstra_expanded": 9119,
+      "a_star_expanded": 2526,
+      "dijkstra_max_frontier": 159,
+      "a_star_max_frontier": 332
+    },
+    {
+      "u": 65301431,
+      "v": 65327079,
+      "dijkstra_dist": 1845.455812693035,
+      "a_star_dist": 1845.455812693035,
+      "dijkstra_expanded": 515,
+      "a_star_expanded": 41,
+      "dijkstra_max_frontier": 80,
+      "a_star_max_frontier": 24
+    },
+    {
+      "u": 65318612,
+      "v": 65333831,
+      "dijkstra_dist": 3001.256221580998,
+      "a_star_dist": 3001.256221580998,
+      "dijkstra_expanded": 2383,
+      "a_star_expanded": 295,
+      "dijkstra_max_frontier": 166,
+      "a_star_max_frontier": 94
+    },
+    {
+      "u": 65292348,
+      "v": 65319958,
+      "dijkstra_dist": 8509.998245404006,
+      "a_star_dist": 8509.998245404006,
+      "dijkstra_expanded": 6517,
+      "a_star_expanded": 1321,
+      "dijkstra_max_frontier": 149,
+      "a_star_max_frontier": 257
+    },
+    {
+      "u": 65323233,
+      "v": 6949087636,
+      "dijkstra_dist": 4463.993591597336,
+      "a_star_dist": 4463.993591597336,
+      "dijkstra_expanded": 1835,
+      "a_star_expanded": 141,
+      "dijkstra_max_frontier": 109,
+      "a_star_max_frontier": 79
+    },
+    {
+      "u": 65358843,
+      "v": 65307463,
+      "dijkstra_dist": 1396.0066853469439,
+      "a_star_dist": 1396.0066853469439,
+      "dijkstra_expanded": 426,
+      "a_star_expanded": 34,
+      "dijkstra_max_frontier": 69,
+      "a_star_max_frontier": 22
+    },
+    {
+      "u": 258467480,
+      "v": 2325127300,
+      "dijkstra_dist": 6232.979839096531,
+      "a_star_dist": 6232.979839096531,
+      "dijkstra_expanded": 6531,
+      "a_star_expanded": 1107,
+      "dijkstra_max_frontier": 208,
+      "a_star_max_frontier": 144
+    },
+    {
+      "u": 65322675,
+      "v": 1130443087,
+      "dijkstra_dist": 6715.763450999172,
+      "a_star_dist": 6715.763450999172,
+      "dijkstra_expanded": 4815,
+      "a_star_expanded": 1908,
+      "dijkstra_max_frontier": 142,
+      "a_star_max_frontier": 173
+    },
+    {
+      "u": 65316936,
+      "v": 4121865741,
+      "dijkstra_dist": 3107.5458598754785,
+      "a_star_dist": 3107.5458598754785,
+      "dijkstra_expanded": 1757,
+      "a_star_expanded": 87,
+      "dijkstra_max_frontier": 145,
+      "a_star_max_frontier": 39
+    },
+    {
+      "u": 65316855,
+      "v": 65314870,
+      "dijkstra_dist": 5766.324838240569,
+      "a_star_dist": 5766.324838240569,
+      "dijkstra_expanded": 4929,
+      "a_star_expanded": 1149,
+      "dijkstra_max_frontier": 169,
+      "a_star_max_frontier": 98
+    },
+    {
+      "u": 65329405,
+      "v": 65349677,
+      "dijkstra_dist": 8102.979444260604,
+      "a_star_dist": 8102.979444260604,
+      "dijkstra_expanded": 6543,
+      "a_star_expanded": 955,
+      "dijkstra_max_frontier": 168,
+      "a_star_max_frontier": 300
+    },
+    {
+      "u": 65310359,
+      "v": 65340973,
+      "dijkstra_dist": 10895.214681729018,
+      "a_star_dist": 10895.214681729018,
+      "dijkstra_expanded": 10033,
+      "a_star_expanded": 2205,
+      "dijkstra_max_frontier": 157,
+      "a_star_max_frontier": 297
+    },
+    {
+      "u": 65294202,
+      "v": 65341569,
+      "dijkstra_dist": 8163.621355235028,
+      "a_star_dist": 8163.621355235028,
+      "dijkstra_expanded": 11058,
+      "a_star_expanded": 1619,
+      "dijkstra_max_frontier": 241,
+      "a_star_max_frontier": 246
+    },
+    {
+      "u": 65344363,
+      "v": 65289886,
+      "dijkstra_dist": 8141.377643251485,
+      "a_star_dist": 8141.377643251485,
+      "dijkstra_expanded": 8093,
+      "a_star_expanded": 2615,
+      "dijkstra_max_frontier": 159,
+      "a_star_max_frontier": 195
+    },
+    {
+      "u": 65318464,
+      "v": 65290923,
+      "dijkstra_dist": 9725.043396599378,
+      "a_star_dist": 9725.043396599378,
+      "dijkstra_expanded": 9490,
+      "a_star_expanded": 3607,
+      "dijkstra_max_frontier": 191,
+      "a_star_max_frontier": 276
+    },
+    {
+      "u": 65366252,
+      "v": 6311843505,
+      "dijkstra_dist": 8539.011785099696,
+      "a_star_dist": 8539.011785099696,
+      "dijkstra_expanded": 8415,
+      "a_star_expanded": 1261,
+      "dijkstra_max_frontier": 180,
+      "a_star_max_frontier": 215
+    },
+    {
+      "u": 65282365,
+      "v": 65314163,
+      "dijkstra_dist": 6158.362584023705,
+      "a_star_dist": 6158.362584023705,
+      "dijkstra_expanded": 6107,
+      "a_star_expanded": 616,
+      "dijkstra_max_frontier": 159,
+      "a_star_max_frontier": 168
+    },
+    {
+      "u": 4021550352,
+      "v": 1659365989,
+      "dijkstra_dist": 5326.199334568516,
+      "a_star_dist": 5326.199334568516,
+      "dijkstra_expanded": 6517,
+      "a_star_expanded": 1329,
+      "dijkstra_max_frontier": 246,
+      "a_star_max_frontier": 146
+    },
+    {
+      "u": 65343960,
+      "v": 65317551,
+      "dijkstra_dist": 1246.2414528730064,
+      "a_star_dist": 1246.2414528730064,
+      "dijkstra_expanded": 294,
+      "a_star_expanded": 47,
+      "dijkstra_max_frontier": 61,
+      "a_star_max_frontier": 20
+    },
+    {
+      "u": 65326003,
+      "v": 65369932,
+      "dijkstra_dist": 6836.558707117691,
+      "a_star_dist": 6836.558707117691,
+      "dijkstra_expanded": 4386,
+      "a_star_expanded": 1363,
+      "dijkstra_max_frontier": 144,
+      "a_star_max_frontier": 214
+    },
+    {
+      "u": 65369307,
+      "v": 65307165,
+      "dijkstra_dist": 11166.586774517144,
+      "a_star_dist": 11166.586774517144,
+      "dijkstra_expanded": 11316,
+      "a_star_expanded": 4455,
+      "dijkstra_max_frontier": 193,
+      "a_star_max_frontier": 282
+    },
+    {
+      "u": 65308587,
+      "v": 2487283195,
+      "dijkstra_dist": 7269.457163377039,
+      "a_star_dist": 7269.457163377039,
+      "dijkstra_expanded": 3823,
+      "a_star_expanded": 869,
+      "dijkstra_max_frontier": 124,
+      "a_star_max_frontier": 95
+    },
+    {
+      "u": 65299771,
+      "v": 65290902,
+      "dijkstra_dist": 6612.328864318952,
+      "a_star_dist": 6612.328864318952,
+      "dijkstra_expanded": 5096,
+      "a_star_expanded": 1610,
+      "dijkstra_max_frontier": 138,
+      "a_star_max_frontier": 224
+    },
+    {
+      "u": 65307389,
+      "v": 65346908,
+      "dijkstra_dist": 7995.136170554473,
+      "a_star_dist": 7995.136170554473,
+      "dijkstra_expanded": 6892,
+      "a_star_expanded": 1131,
+      "dijkstra_max_frontier": 156,
+      "a_star_max_frontier": 196
+    },
+    {
+      "u": 65289379,
+      "v": 65286623,
+      "dijkstra_dist": 4517.579940273236,
+      "a_star_dist": 4517.579940273236,
+      "dijkstra_expanded": 1750,
+      "a_star_expanded": 423,
+      "dijkstra_max_frontier": 115,
+      "a_star_max_frontier": 79
+    },
+    {
+      "u": 65317037,
+      "v": 258972779,
+      "dijkstra_dist": 11800.46736527789,
+      "a_star_dist": 11800.46736527789,
+      "dijkstra_expanded": 11156,
+      "a_star_expanded": 3332,
+      "dijkstra_max_frontier": 170,
+      "a_star_max_frontier": 331
+    },
+    {
+      "u": 65281511,
+      "v": 2317635181,
+      "dijkstra_dist": 4678.285695283504,
+      "a_star_dist": 4678.285695283504,
+      "dijkstra_expanded": 2974,
+      "a_star_expanded": 465,
+      "dijkstra_max_frontier": 152,
+      "a_star_max_frontier": 113
+    },
+    {
+      "u": 65332168,
+      "v": 65293453,
+      "dijkstra_dist": 6429.7792327386505,
+      "a_star_dist": 6429.7792327386505,
+      "dijkstra_expanded": 8333,
+      "a_star_expanded": 1230,
+      "dijkstra_max_frontier": 280,
+      "a_star_max_frontier": 174
+    },
+    {
+      "u": 6775758551,
+      "v": 65310645,
+      "dijkstra_dist": 10032.04556566518,
+      "a_star_dist": 10032.04556566518,
+      "dijkstra_expanded": 9865,
+      "a_star_expanded": 3823,
+      "dijkstra_max_frontier": 188,
+      "a_star_max_frontier": 204
+    },
+    {
+      "u": 65315071,
+      "v": 65311892,
+      "dijkstra_dist": 6493.928767716212,
+      "a_star_dist": 6493.928767716212,
+      "dijkstra_expanded": 6163,
+      "a_star_expanded": 1385,
+      "dijkstra_max_frontier": 194,
+      "a_star_max_frontier": 195
+    },
+    {
+      "u": 3386704350,
+      "v": 65317176,
+      "dijkstra_dist": 3932.8844920612532,
+      "a_star_dist": 3932.8844920612532,
+      "dijkstra_expanded": 3910,
+      "a_star_expanded": 470,
+      "dijkstra_max_frontier": 205,
+      "a_star_max_frontier": 99
+    },
+    {
+      "u": 65292114,
+      "v": 65324782,
+      "dijkstra_dist": 11981.441215971894,
+      "a_star_dist": 11981.441215971894,
+      "dijkstra_expanded": 11047,
+      "a_star_expanded": 4374,
+      "dijkstra_max_frontier": 178,
+      "a_star_max_frontier": 212
+    },
+    {
+      "u": 65324431,
+      "v": 10824617369,
+      "dijkstra_dist": 2962.6100238746058,
+      "a_star_dist": 2962.6100238746058,
+      "dijkstra_expanded": 1435,
+      "a_star_expanded": 385,
+      "dijkstra_max_frontier": 124,
+      "a_star_max_frontier": 80
+    },
+    {
+      "u": 2399950856,
+      "v": 4021327368,
+      "dijkstra_dist": 10639.061429082858,
+      "a_star_dist": 10639.061429082858,
+      "dijkstra_expanded": 11541,
+      "a_star_expanded": 3773,
+      "dijkstra_max_frontier": 250,
+      "a_star_max_frontier": 268
+    },
+    {
+      "u": 65292722,
+      "v": 65295340,
+      "dijkstra_dist": 1772.0243216341585,
+      "a_star_dist": 1772.0243216341585,
+      "dijkstra_expanded": 761,
+      "a_star_expanded": 116,
+      "dijkstra_max_frontier": 91,
+      "a_star_max_frontier": 38
+    },
+    {
+      "u": 65367485,
+      "v": 65308289,
+      "dijkstra_dist": 2038.7690002007769,
+      "a_star_dist": 2038.7690002007769,
+      "dijkstra_expanded": 1197,
+      "a_star_expanded": 155,
+      "dijkstra_max_frontier": 122,
+      "a_star_max_frontier": 66
+    },
+    {
+      "u": 65313423,
+      "v": 2320396530,
+      "dijkstra_dist": 6590.749047715584,
+      "a_star_dist": 6590.749047715584,
+      "dijkstra_expanded": 6542,
+      "a_star_expanded": 1491,
+      "dijkstra_max_frontier": 189,
+      "a_star_max_frontier": 168
+    },
+    {
+      "u": 65347452,
+      "v": 65324878,
+      "dijkstra_dist": 6553.037813366798,
+      "a_star_dist": 6553.037813366798,
+      "dijkstra_expanded": 5654,
+      "a_star_expanded": 1660,
+      "dijkstra_max_frontier": 179,
+      "a_star_max_frontier": 199
+    },
+    {
+      "u": 65342049,
+      "v": 65280432,
+      "dijkstra_dist": 3795.6218849160637,
+      "a_star_dist": 3795.6218849160637,
+      "dijkstra_expanded": 2718,
+      "a_star_expanded": 235,
+      "dijkstra_max_frontier": 144,
+      "a_star_max_frontier": 81
+    },
+    {
+      "u": 65303689,
+      "v": 65296100,
+      "dijkstra_dist": 10139.874115049128,
+      "a_star_dist": 10139.874115049128,
+      "dijkstra_expanded": 11278,
+      "a_star_expanded": 3602,
+      "dijkstra_max_frontier": 197,
+      "a_star_max_frontier": 282
+    },
+    {
+      "u": 298082750,
+      "v": 65347539,
+      "dijkstra_dist": 3292.954690698391,
+      "a_star_dist": 3292.954690698391,
+      "dijkstra_expanded": 2579,
+      "a_star_expanded": 387,
+      "dijkstra_max_frontier": 182,
+      "a_star_max_frontier": 71
+    },
+    {
+      "u": 65290693,
+      "v": 65312657,
+      "dijkstra_dist": 11212.336032459307,
+      "a_star_dist": 11212.336032459307,
+      "dijkstra_expanded": 10687,
+      "a_star_expanded": 2448,
+      "dijkstra_max_frontier": 182,
+      "a_star_max_frontier": 320
+    },
+    {
+      "u": 65300991,
+      "v": 4002307885,
+      "dijkstra_dist": 9902.914279078672,
+      "a_star_dist": 9902.914279078672,
+      "dijkstra_expanded": 10833,
+      "a_star_expanded": 3489,
+      "dijkstra_max_frontier": 188,
+      "a_star_max_frontier": 239
+    },
+    {
+      "u": 65355425,
+      "v": 65306602,
+      "dijkstra_dist": 3241.765276040465,
+      "a_star_dist": 3241.765276040465,
+      "dijkstra_expanded": 1593,
+      "a_star_expanded": 251,
+      "dijkstra_max_frontier": 151,
+      "a_star_max_frontier": 53
+    },
+    {
+      "u": 65336069,
+      "v": 65297144,
+      "dijkstra_dist": 11704.337686689852,
+      "a_star_dist": 11704.337686689852,
+      "dijkstra_expanded": 9937,
+      "a_star_expanded": 4355,
+      "dijkstra_max_frontier": 180,
+      "a_star_max_frontier": 234
+    },
+    {
+      "u": 318783030,
+      "v": 65357989,
+      "dijkstra_dist": 5613.877740747543,
+      "a_star_dist": 5613.877740747543,
+      "dijkstra_expanded": 3554,
+      "a_star_expanded": 760,
+      "dijkstra_max_frontier": 143,
+      "a_star_max_frontier": 135
+    },
+    {
+      "u": 65320121,
+      "v": 65303091,
+      "dijkstra_dist": 5499.249056021904,
+      "a_star_dist": 5499.249056021904,
+      "dijkstra_expanded": 3434,
+      "a_star_expanded": 346,
+      "dijkstra_max_frontier": 129,
+      "a_star_max_frontier": 93
+    },
+    {
+      "u": 65324613,
+      "v": 65343475,
+      "dijkstra_dist": 11080.672143112772,
+      "a_star_dist": 11080.672143112772,
+      "dijkstra_expanded": 10658,
+      "a_star_expanded": 4264,
+      "dijkstra_max_frontier": 180,
+      "a_star_max_frontier": 263
+    },
+    {
+      "u": 65320136,
+      "v": 5283668865,
+      "dijkstra_dist": 9334.734767434093,
+      "a_star_dist": 9334.734767434093,
+      "dijkstra_expanded": 8543,
+      "a_star_expanded": 2495,
+      "dijkstra_max_frontier": 173,
+      "a_star_max_frontier": 210
+    },
+    {
+      "u": 65295403,
+      "v": 438880208,
+      "dijkstra_dist": 13105.192510423425,
+      "a_star_dist": 13105.192510423425,
+      "dijkstra_expanded": 11843,
+      "a_star_expanded": 3811,
+      "dijkstra_max_frontier": 187,
+      "a_star_max_frontier": 129
+    },
+    {
+      "u": 258758548,
+      "v": 601336584,
+      "dijkstra_dist": 10671.868327347338,
+      "a_star_dist": 10671.868327347338,
+      "dijkstra_expanded": 11374,
+      "a_star_expanded": 3525,
+      "dijkstra_max_frontier": 197,
+      "a_star_max_frontier": 323
+    },
+    {
+      "u": 258922160,
+      "v": 4021099680,
+      "dijkstra_dist": 6944.376082746949,
+      "a_star_dist": 6944.376082746949,
+      "dijkstra_expanded": 5370,
+      "a_star_expanded": 1103,
+      "dijkstra_max_frontier": 163,
+      "a_star_max_frontier": 113
+    },
+    {
+      "u": 65299771,
+      "v": 2020113663,
+      "dijkstra_dist": 8244.460787341955,
+      "a_star_dist": 8244.460787341955,
+      "dijkstra_expanded": 6745,
+      "a_star_expanded": 1504,
+      "dijkstra_max_frontier": 138,
+      "a_star_max_frontier": 214
+    },
+    {
+      "u": 65320171,
+      "v": 65319493,
+      "dijkstra_dist": 10588.499432336319,
+      "a_star_dist": 10588.499432336319,
+      "dijkstra_expanded": 11510,
+      "a_star_expanded": 2966,
+      "dijkstra_max_frontier": 198,
+      "a_star_max_frontier": 313
+    },
+    {
+      "u": 65345274,
+      "v": 65368470,
+      "dijkstra_dist": 5836.904850718638,
+      "a_star_dist": 5836.904850718638,
+      "dijkstra_expanded": 4357,
+      "a_star_expanded": 876,
+      "dijkstra_max_frontier": 134,
+      "a_star_max_frontier": 117
+    },
+    {
+      "u": 6265008478,
+      "v": 2511971979,
+      "dijkstra_dist": 6759.070734470058,
+      "a_star_dist": 6759.070734470058,
+      "dijkstra_expanded": 9379,
+      "a_star_expanded": 1158,
+      "dijkstra_max_frontier": 292,
+      "a_star_max_frontier": 172
+    },
+    {
+      "u": 65289124,
+      "v": 65353974,
+      "dijkstra_dist": 18215.653908554996,
+      "a_star_dist": 18215.653908554996,
+      "dijkstra_expanded": 10581,
+      "a_star_expanded": 3434,
+      "dijkstra_max_frontier": 159,
+      "a_star_max_frontier": 302
+    },
+    {
+      "u": 1594252941,
+      "v": 65303978,
+      "dijkstra_dist": 12659.31533161394,
+      "a_star_dist": 12659.31533161394,
+      "dijkstra_expanded": 10431,
+      "a_star_expanded": 5122,
+      "dijkstra_max_frontier": 180,
+      "a_star_max_frontier": 281
+    },
+    {
+      "u": 65307056,
+      "v": 6397710143,
+      "dijkstra_dist": 9557.323239567742,
+      "a_star_dist": 9557.323239567742,
+      "dijkstra_expanded": 10504,
+      "a_star_expanded": 1505,
+      "dijkstra_max_frontier": 191,
+      "a_star_max_frontier": 320
+    },
+    {
+      "u": 539989856,
+      "v": 65288345,
+      "dijkstra_dist": 10831.489878973993,
+      "a_star_dist": 10831.489878973993,
+      "dijkstra_expanded": 11372,
+      "a_star_expanded": 3234,
+      "dijkstra_max_frontier": 187,
+      "a_star_max_frontier": 259
+    },
+    {
+      "u": 12116291923,
+      "v": 2624398928,
+      "dijkstra_dist": 3779.7416677528945,
+      "a_star_dist": 3779.7416677528945,
+      "dijkstra_expanded": 1669,
+      "a_star_expanded": 424,
+      "dijkstra_max_frontier": 97,
+      "a_star_max_frontier": 83
+    },
+    {
+      "u": 65302962,
+      "v": 65307952,
+      "dijkstra_dist": 6630.770498152877,
+      "a_star_dist": 6630.770498152877,
+      "dijkstra_expanded": 4308,
+      "a_star_expanded": 1093,
+      "dijkstra_max_frontier": 127,
+      "a_star_max_frontier": 181
+    },
+    {
+      "u": 65336170,
+      "v": 258922135,
+      "dijkstra_dist": 11422.854836730177,
+      "a_star_dist": 11422.854836730177,
+      "dijkstra_expanded": 9213,
+      "a_star_expanded": 2114,
+      "dijkstra_max_frontier": 159,
+      "a_star_max_frontier": 286
+    },
+    {
+      "u": 65305980,
+      "v": 65292541,
+      "dijkstra_dist": 2428.9539850379356,
+      "a_star_dist": 2428.9539850379356,
+      "dijkstra_expanded": 1184,
+      "a_star_expanded": 212,
+      "dijkstra_max_frontier": 128,
+      "a_star_max_frontier": 55
+    },
+    {
+      "u": 65373779,
+      "v": 65303568,
+      "dijkstra_dist": 6176.836377848578,
+      "a_star_dist": 6176.836377848578,
+      "dijkstra_expanded": 2662,
+      "a_star_expanded": 529,
+      "dijkstra_max_frontier": 130,
+      "a_star_max_frontier": 117
+    },
+    {
+      "u": 65316662,
+      "v": 65330057,
+      "dijkstra_dist": 2220.5427765898326,
+      "a_star_dist": 2220.5427765898326,
+      "dijkstra_expanded": 724,
+      "a_star_expanded": 103,
+      "dijkstra_max_frontier": 99,
+      "a_star_max_frontier": 38
+    },
+    {
+      "u": 6311883023,
+      "v": 65316462,
+      "dijkstra_dist": 4163.285452892219,
+      "a_star_dist": 4163.285452892219,
+      "dijkstra_expanded": 2291,
+      "a_star_expanded": 615,
+      "dijkstra_max_frontier": 124,
+      "a_star_max_frontier": 80
+    },
+    {
+      "u": 65357344,
+      "v": 1692478722,
+      "dijkstra_dist": 6966.8497568419625,
+      "a_star_dist": 6966.8497568419625,
+      "dijkstra_expanded": 4310,
+      "a_star_expanded": 1385,
+      "dijkstra_max_frontier": 135,
+      "a_star_max_frontier": 149
+    },
+    {
+      "u": 5556967423,
+      "v": 65358040,
+      "dijkstra_dist": 10940.697083312049,
+      "a_star_dist": 10940.697083312049,
+      "dijkstra_expanded": 7096,
+      "a_star_expanded": 1556,
+      "dijkstra_max_frontier": 156,
+      "a_star_max_frontier": 267
+    },
+    {
+      "u": 315367847,
+      "v": 65296947,
+      "dijkstra_dist": 10259.550250189455,
+      "a_star_dist": 10259.550250189455,
+      "dijkstra_expanded": 7019,
+      "a_star_expanded": 1886,
+      "dijkstra_max_frontier": 178,
+      "a_star_max_frontier": 140
+    },
+    {
+      "u": 4139777609,
+      "v": 65335720,
+      "dijkstra_dist": 7482.869503694133,
+      "a_star_dist": 7482.869503694133,
+      "dijkstra_expanded": 3918,
+      "a_star_expanded": 1350,
+      "dijkstra_max_frontier": 145,
+      "a_star_max_frontier": 144
+    },
+    {
+      "u": 65309297,
+      "v": 65292965,
+      "dijkstra_dist": 9319.460163642983,
+      "a_star_dist": 9319.460163642983,
+      "dijkstra_expanded": 7391,
+      "a_star_expanded": 2720,
+      "dijkstra_max_frontier": 158,
+      "a_star_max_frontier": 177
+    },
+    {
+      "u": 65296970,
+      "v": 3279043481,
+      "dijkstra_dist": 8985.340787698364,
+      "a_star_dist": 8985.340787698364,
+      "dijkstra_expanded": 8921,
+      "a_star_expanded": 1531,
+      "dijkstra_max_frontier": 193,
+      "a_star_max_frontier": 157
+    },
+    {
+      "u": 65313837,
+      "v": 65360244,
+      "dijkstra_dist": 6967.332822476047,
+      "a_star_dist": 6967.332822476047,
+      "dijkstra_expanded": 6325,
+      "a_star_expanded": 1371,
+      "dijkstra_max_frontier": 187,
+      "a_star_max_frontier": 219
+    },
+    {
+      "u": 65343027,
+      "v": 65295079,
+      "dijkstra_dist": 11058.631932314298,
+      "a_star_dist": 11058.631932314298,
+      "dijkstra_expanded": 9526,
+      "a_star_expanded": 2633,
+      "dijkstra_max_frontier": 191,
+      "a_star_max_frontier": 295
+    },
+    {
+      "u": 768238240,
+      "v": 4021327375,
+      "dijkstra_dist": 14306.146752772616,
+      "a_star_dist": 14306.146752772616,
+      "dijkstra_expanded": 11178,
+      "a_star_expanded": 6445,
+      "dijkstra_max_frontier": 154,
+      "a_star_max_frontier": 282
+    },
+    {
+      "u": 65306901,
+      "v": 65292901,
+      "dijkstra_dist": 4611.4921276701325,
+      "a_star_dist": 4611.4921276701325,
+      "dijkstra_expanded": 1742,
+      "a_star_expanded": 578,
+      "dijkstra_max_frontier": 81,
+      "a_star_max_frontier": 106
+    },
+    {
+      "u": 2325127186,
+      "v": 65309735,
+      "dijkstra_dist": 8176.8557582038975,
+      "a_star_dist": 8176.8557582038975,
+      "dijkstra_expanded": 9656,
+      "a_star_expanded": 1695,
+      "dijkstra_max_frontier": 214,
+      "a_star_max_frontier": 171
+    },
+    {
+      "u": 65355942,
+      "v": 65316422,
+      "dijkstra_dist": 6771.018744626902,
+      "a_star_dist": 6771.018744626902,
+      "dijkstra_expanded": 4006,
+      "a_star_expanded": 1455,
+      "dijkstra_max_frontier": 142,
+      "a_star_max_frontier": 198
+    },
+    {
+      "u": 65321679,
+      "v": 4012499526,
+      "dijkstra_dist": 7133.159299791346,
+      "a_star_dist": 7133.159299791346,
+      "dijkstra_expanded": 6832,
+      "a_star_expanded": 1193,
+      "dijkstra_max_frontier": 183,
+      "a_star_max_frontier": 180
+    },
+    {
+      "u": 258760426,
+      "v": 65289529,
+      "dijkstra_dist": 9567.784045921017,
+      "a_star_dist": 9567.784045921017,
+      "dijkstra_expanded": 10751,
+      "a_star_expanded": 3109,
+      "dijkstra_max_frontier": 182,
+      "a_star_max_frontier": 201
+    },
+    {
+      "u": 259138852,
+      "v": 1201336698,
+      "dijkstra_dist": 9223.895408007596,
+      "a_star_dist": 9223.895408007596,
+      "dijkstra_expanded": 10622,
+      "a_star_expanded": 1991,
+      "dijkstra_max_frontier": 191,
+      "a_star_max_frontier": 232
+    },
+    {
+      "u": 65341569,
+      "v": 65308469,
+      "dijkstra_dist": 8332.247189997872,
+      "a_star_dist": 8332.247189997872,
+      "dijkstra_expanded": 6420,
+      "a_star_expanded": 2000,
+      "dijkstra_max_frontier": 158,
+      "a_star_max_frontier": 160
+    },
+    {
+      "u": 768247163,
+      "v": 332786679,
+      "dijkstra_dist": 8692.609135358565,
+      "a_star_dist": 8692.609135358565,
+      "dijkstra_expanded": 8060,
+      "a_star_expanded": 3438,
+      "dijkstra_max_frontier": 166,
+      "a_star_max_frontier": 200
+    },
+    {
+      "u": 65306585,
+      "v": 65289050,
+      "dijkstra_dist": 10175.15433802169,
+      "a_star_dist": 10175.15433802169,
+      "dijkstra_expanded": 10135,
+      "a_star_expanded": 2929,
+      "dijkstra_max_frontier": 178,
+      "a_star_max_frontier": 285
+    },
+    {
+      "u": 65369305,
+      "v": 764886902,
+      "dijkstra_dist": 1802.0808366143851,
+      "a_star_dist": 1802.0808366143851,
+      "dijkstra_expanded": 659,
+      "a_star_expanded": 170,
+      "dijkstra_max_frontier": 87,
+      "a_star_max_frontier": 38
+    },
+    {
+      "u": 2317999448,
+      "v": 65306245,
+      "dijkstra_dist": 4186.833934908862,
+      "a_star_dist": 4186.833934908862,
+      "dijkstra_expanded": 3431,
+      "a_star_expanded": 450,
+      "dijkstra_max_frontier": 211,
+      "a_star_max_frontier": 74
+    },
+    {
+      "u": 258970637,
+      "v": 65294011,
+      "dijkstra_dist": 1162.4689242396485,
+      "a_star_dist": 1162.4689242396485,
+      "dijkstra_expanded": 247,
+      "a_star_expanded": 50,
+      "dijkstra_max_frontier": 59,
+      "a_star_max_frontier": 29
+    }
+  ]
+}
