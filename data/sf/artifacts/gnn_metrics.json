@@ -1,0 +1,13 @@
+{
+  "rmse": 3297.74365234375,
+  "mae": 2621.18017578125,
+  "mape": 0.6203920841217041,
+  "train_time_sec": 16.70990777015686,
+  "loss": "huber",
+  "target_transform": "log1p",
+  "weight_decay": 0.0001,
+  "patience": 20,
+  "hidden_dim": 128,
+  "num_layers": 4,
+  "epochs": 80
+}
