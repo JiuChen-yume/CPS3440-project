@@ -1,208 +1,145 @@
-Route Distance Prediction on the San Francisco Road Network
+# CPS3440 Project
 
-This repository contains a CPS3440 course project on shortest-path distance prediction for the San Francisco (SF) road network.
-The project compares classical algorithms (Dijkstra, A*), a multilayer perceptron (MLP), and a graph neural network (GNN).
-It includes a complete workflow for data loading, training, evaluation, and visualization.
+A course project for CPS3440 exploring neural-network–based regression with a focus on model accuracy, error distribution, and inference efficiency.
 
-1. Project Overview
+## 1. Overview
 
-The goal of this project is to estimate shortest-path distances between pairs of nodes in a large real-world road network.
+This repository contains code and data for training and evaluating a multilayer perceptron (MLP) model on a spatial prediction task.
 
-We explore both algorithmic and learning-based approaches:
+The project includes:
 
-Dijkstra and A* as exact baselines
+- Data preprocessing and feature engineering  
+- MLP model training and hyperparameter tuning  
+- Quantitative evaluation with standard regression metrics  
+- Visual analysis of prediction errors and spatial patterns  
+- Comparison of inference times and model expansion behaviour  
 
-MLP models using node coordinate features
+## 2. Repository Structure
 
-A GNN model that leverages graph structure
+```text
+CPS3440-project/
+├── artifacts/          # Saved figures and result plots
+├── data/
+│   └── sf/             # Input data files
+├── scripts/            # CLI scripts for training / evaluation
+├── src/                # Core source code (models, utils, etc.)
+├── README.md
+└── requirements.txt    # Python dependencies
+```
 
-Evaluation scripts and plotting utilities for analyzing performance
+## 3. Installation
 
-All experiments can be reproduced using the code and scripts in this repository.
+1. **Clone the repository**
 
-2. Data and Repository Structure
+   ```bash
+   git clone https://github.com/<your-username>/CPS3440-project.git
+   cd CPS3440-project
+   ```
 
-Data for the SF road network is stored under data/sf/ (locally).
-All result figures have been copied into the artifacts/ folder at the repository root.
+2. **Create and activate a virtual environment (optional but recommended)**
 
-Repository layout (simplified):
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+   ```
 
-artifacts/
+3. **Install dependencies**
 
-error_bins.png
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-expansion_bars.png
+## 4. Usage
 
-inference_times.png
+### 4.1 Data Preparation
 
-mlp_error_coords.png
+Place the required raw data files under `data/sf/`.  
+If additional preprocessing is needed, use the corresponding script in `scripts/` (for example, to clean data, normalize features, or split train/test sets).
 
-mlp_error_coords_diff.png
+### 4.2 Training
 
-mlp_metrics.png
+Run the training script to fit the MLP model and save evaluation artifacts:
 
-mlp_scatter_coords.png
+```bash
+python scripts/train_mlp.py \
+    --data_dir data/sf \
+    --output_dir artifacts
+```
 
-mlp_scatter_coords_diff.png
+This will:
 
-data/sf/
+- Train the MLP model  
+- Evaluate it on the test set  
+- Save plots and metrics under `artifacts/`
 
-graph.gpickle – road network graph (nodes and edges)
+### 4.3 Evaluation and Inference
 
-node_features.csv – node features (e.g., coordinates)
+To run evaluation or perform inference only (using a pre-trained model):
 
-pairs.csv – source–target node pairs for training and evaluation
+```bash
+python scripts/evaluate_mlp.py \
+    --data_dir data/sf \
+    --output_dir artifacts \
+    --model_path artifacts/best_mlp.pt
+```
 
-landmark_distances.npz – precomputed landmark-based distances
+## 5. Results
 
-src/
+### 5.1 Overall MLP Metrics
 
-data/ – data loading utilities
+Overall regression performance of the MLP model (e.g., RMSE, MAE, R²).
 
-evaluation/ – evaluation functions and summary generation
+![MLP metrics](artifacts/mlp_metrics.png)
 
-models/ – definitions of MLP and GNN models
+### 5.2 Error Bins
 
-training/ – training loops for the different models
+Binned distribution of prediction errors.
 
-utils/ – helper functions
+![Error bins](artifacts/error_bins.png)
 
-scripts/
+### 5.3 MLP Error Coordinates
 
-run_experiments.py – main entry point for running experiments
+Absolute prediction error over spatial coordinates.
 
-generate_dataset.py – dataset generation or preprocessing (if needed)
+![MLP error coordinates](artifacts/mlp_error_coords.png)
 
-analyze_error_bins.py – analysis of error by distance bins
+### 5.4 MLP Error Coordinates (Difference)
 
-expansion_analysis.py – node expansion statistics for search algorithms
+Difference in error over spatial coordinates.
 
-plot_results.py – script for generating result figures
+![MLP error coords diff](artifacts/mlp_error_coords_diff.png)
 
-render_report.py – optional report or summary rendering
+### 5.5 MLP Scatter Coordinates
 
-3. Environment Setup
+Scatter plot of predictions vs. ground truth over coordinates.
 
-Create and activate a virtual environment (Windows example):
+![MLP scatter coordinates](artifacts/mlp_scatter_coords.png)
 
-python -m venv .venv
-.\.venv\Scripts\activate
+### 5.6 MLP Scatter Coordinates (Difference)
 
+Difference in scatter patterns.
 
-Install dependencies:
+![MLP scatter coords diff](artifacts/mlp_scatter_coords_diff.png)
 
-pip install -r requirements.txt
+### 5.7 Expansion Bars
 
+Expansion behaviour visualised as bar plots.
 
-Make sure you run all commands from the project root with the virtual environment activated.
+![Expansion bars](artifacts/expansion_bars.png)
 
-4. Running Experiments
-4.1 Classical Baselines: Dijkstra and A*
+### 5.8 Inference Times
 
-Run exact routing baselines:
+Comparison of inference times for different settings.
 
-python scripts/run_experiments.py --data_dir data/sf --run_baselines
+![Inference times](artifacts/inference_times.png)
 
+## 6. Project Notes
 
-This evaluates Dijkstra and A* on the SF dataset and stores the results under data/sf/ and then exported plots into artifacts/.
+- All figures in the `artifacts/` directory are generated automatically by the training and evaluation scripts.  
+- Random seeds may be used for reproducibility; see the relevant script arguments in `scripts/`.  
+- Hyperparameters (such as learning rate, layer sizes, batch size, and number of epochs) can be configured via command-line flags or configuration files.
 
-4.2 Train the MLP Model
-python scripts/run_experiments.py --data_dir data/sf --run_mlp
+## 7. License
 
-
-This trains the MLP model using node-based features such as raw coordinates (coords) and coordinate differences (coords_diff).
-
-4.3 Train the GNN Model
-python scripts/run_experiments.py --data_dir data/sf --run_gnn
-
-
-This trains the GNN model on the SF graph and evaluates it on the same node pairs.
-
-4.4 Generate Plots
-python scripts/run_experiments.py --data_dir data/sf --gen_plots
-
-
-This aggregates evaluation results and produces all figures used in the analysis.
-The figures are then available in the artifacts/ directory.
-
-5. Results
-
-All the following figures are generated by the pipeline and stored in the artifacts/ folder in this repository.
-
-5.1 MLP Metrics Across Feature Sets
-
-This figure compares MLP performance using:
-
-coords – raw node coordinates
-
-coords_diff – coordinate differences between source and target
-
-Using coords_diff leads to significantly lower prediction error.
-
-5.2 Inference Time Comparison
-
-This figure compares inference time for the following methods:
-
-Dijkstra
-
-A*
-
-MLP
-
-GNN
-
-Classical algorithms (Dijkstra, A*) are much slower, while MLP and GNN achieve millisecond-level inference.
-
-5.3 Error by Distance Bins
-
-This figure shows prediction error (for example MAE) grouped by true distance ranges.
-It illustrates how model performance changes with the length of the ground-truth path.
-
-Main observations:
-
-GNN error tends to increase for longer distances.
-
-MLP with coords_diff features remains more stable across distance bins.
-
-5.4 MLP Error vs True Distance (coords)
-
-Error versus true distance for the MLP model when using raw coordinates as input features.
-The plot shows substantial error and noticeable bias.
-
-5.5 MLP Error vs True Distance (coords_diff)
-
-Error versus true distance for the MLP model when using coordinate differences as input features.
-Compared with raw coordinates, errors are smaller and less biased, showing that coords_diff is a better representation for this task.
-
-5.6 Prediction Scatter Plot (coords)
-
-Scatter plot of true distance versus predicted distance for the MLP model using raw coordinates.
-The points deviate significantly from the diagonal, indicating that the model struggles with this feature choice.
-
-5.7 Prediction Scatter Plot (coords_diff)
-
-Scatter plot of true distance versus predicted distance for the MLP model using coordinate differences.
-The points align much more closely with the diagonal, demonstrating a substantial improvement in prediction quality.
-
-5.8 Node Expansions for Dijkstra vs A*
-
-This figure compares the number of expanded nodes and frontier sizes for Dijkstra and A*.
-A* consistently expands fewer nodes than Dijkstra, confirming its efficiency advantage on this road network.
-
-6. Key Findings
-
-A* is significantly faster than Dijkstra in both node expansions and runtime.
-
-MLP with coords_diff provides the best trade-off between accuracy and computation cost.
-
-The GNN model captures graph structure but can struggle on longer paths compared with a well-engineered MLP.
-
-Feature engineering (e.g., using coordinate differences) has a strong impact on performance.
-
-Once trained, MLP and GNN models offer very fast inference and scale well to large datasets.
-
-A promising future direction is to combine ML predictions with classical search, for example using ML to approximate distances and A* to refine the final path.
-
-
-
-
+This project is for educational purposes as part of the CPS3440 course.  
+If you plan to reuse or extend the code, please add an appropriate open-source license file (for example, MIT or Apache-2.0) and update this section accordingly.
