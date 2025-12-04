@@ -85,49 +85,63 @@ python scripts/evaluate_mlp.py \
 
 ## 5. Results
 
-### 5.1 Overall MLP Metrics
+### 5.1 Feature Comparison: `coords` vs `coords_diff`
+
+This table compares two feature sets for the MLP: using raw coordinates (`coords`) versus coordinate differences (`coords_diff`).  
+`coords_diff` dramatically reduces the error (RMSE from ~2827 to ~529 and MAPE from ~0.48 to ~0.08), at the cost of a much longer training time and a larger model (more epochs and a bigger hidden dimension). This suggests that difference-based features capture more informative structure for the regression task, even though they are more expensive to train.
+
+![MLP feature results](artifacts/mlp_feature_results_en_wide.png)
+
+### 5.2 Algorithm Comparison: Shortest Path vs Learned Models
+
+This table compares classic shortest-path algorithms (Dijkstra and A*) with learned models (MLP and GNN).  
+Dijkstra and A* achieve zero error by construction but have very long inference times (around 70 s and 28 s). The MLP has small but non-zero errors (RMSE ≈ 546, MAPE ≈ 0.08) while its inference time is orders of magnitude faster (~0.03 s), making it a practical approximation when many queries are needed. The GNN in this setup is slower and less accurate than the MLP, indicating that its current architecture or training regime is not yet competitive.
+
+![Algorithm metrics](artifacts/metrics_table_en_wide_last_col.png)
+
+### 5.3 Overall MLP Metrics
 
 Overall regression performance of the MLP model (e.g., RMSE, MAE, R²).
 
 ![MLP metrics](artifacts/mlp_metrics.png)
 
-### 5.2 Error Bins
+### 5.4 Error Bins
 
 Binned distribution of prediction errors.
 
 ![Error bins](artifacts/error_bins.png)
 
-### 5.3 MLP Error Coordinates
+### 5.5 MLP Error Coordinates
 
 Absolute prediction error over spatial coordinates.
 
 ![MLP error coordinates](artifacts/mlp_error_coords.png)
 
-### 5.4 MLP Error Coordinates (Difference)
+### 5.6 MLP Error Coordinates (Difference)
 
 Difference in error over spatial coordinates.
 
 ![MLP error coords diff](artifacts/mlp_error_coords_diff.png)
 
-### 5.5 MLP Scatter Coordinates
+### 5.7 MLP Scatter Coordinates
 
 Scatter plot of predictions vs. ground truth over coordinates.
 
 ![MLP scatter coordinates](artifacts/mlp_scatter_coords.png)
 
-### 5.6 MLP Scatter Coordinates (Difference)
+### 5.8 MLP Scatter Coordinates (Difference)
 
 Difference in scatter patterns.
 
 ![MLP scatter coords diff](artifacts/mlp_scatter_coords_diff.png)
 
-### 5.7 Expansion Bars
+### 5.9 Expansion Bars
 
 Expansion behaviour visualised as bar plots.
 
 ![Expansion bars](artifacts/expansion_bars.png)
 
-### 5.8 Inference Times
+### 5.10 Inference Times
 
 Comparison of inference times for different settings.
 
@@ -139,7 +153,8 @@ Comparison of inference times for different settings.
 - Random seeds may be used for reproducibility; see the relevant script arguments in `scripts/`.  
 - Hyperparameters (such as learning rate, layer sizes, batch size, and number of epochs) can be configured via command-line flags or configuration files.
 
-## 7. License
+## 7. Members
+   Lu Mengqing 1308178
+   Liu Pengyu 1235786
+   
 
-This project is for educational purposes as part of the CPS3440 course.  
-If you plan to reuse or extend the code, please add an appropriate open-source license file (for example, MIT or Apache-2.0) and update this section accordingly.
