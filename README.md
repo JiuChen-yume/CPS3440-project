@@ -156,5 +156,5 @@ Comparison of inference times for different settings.
 ## 7. Members
    Lu Mengqing 1308178
    Liu Pengyu 1235786
-   
+   Fang Kailin 1307856
 
