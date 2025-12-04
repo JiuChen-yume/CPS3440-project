@@ -1,169 +1,207 @@
-Graph-Based Route Distance Prediction with MLP & GNN
+Route Distance Prediction on the San Francisco Road Network
 
-A CPS3440 Course Project
+This repository contains a CPS3440 course project on shortest-path distance prediction for the San Francisco (SF) road network.
+The project compares classical algorithms (Dijkstra, A*), a multilayer perceptron (MLP), and a graph neural network (GNN).
+It includes a complete workflow for data loading, training, evaluation, and visualization.
 
-This project implements and compares multiple methods for predicting shortest-path distances in the San Francisco road network (SF graph).
-It includes:
+1. Project Overview
 
-Exact routing algorithms (Dijkstra, A*)
+The goal of this project is to estimate shortest-path distances between pairs of nodes in a large real-world road network.
 
-Machine learning baselines (MLP)
+We explore both algorithmic and learning-based approaches:
 
-Graph Neural Networks (GNN)
+Dijkstra and A* as exact baselines
 
-Full evaluation suite
+MLP models using node coordinate features
 
-Visualization pipeline (error maps, scatter plots, metrics, inference time, node expansions)
+A GNN model that leverages graph structure
 
-The project is fully reproducible and organized as a modular research pipeline.
+Evaluation scripts and plotting utilities for analyzing performance
 
+All experiments can be reproduced using the code and scripts in this repository.
 
-1. Project Structure
+2. Data and Repository Structure
 
- project/
-│
-├── data/
-│   └── sf/
-│       ├── graph.gpickle
-│       ├── node_features.csv
-│       ├── pairs.csv
-│       ├── landmark_distances.npz
-│       └── artifacts/              # generated results, models, plots as png files (only uploaded this fold)
-│
-├── src/
-│   ├── data/                       # data loaders
-│   ├── evaluation/                 # metrics & evaluation summary
-│   ├── models/                     # GNN & MLP model definitions
-│   ├── training/                   # training loops
-│   └── utils/                      # helper functions
-│
-└── scripts/
-    ├── run_experiments.py          # main experiment runner
-    ├── generate_dataset.py
-    ├── analyze_error_bins.py
-    ├── expansion_analysis.py
-    ├── plot_results.py             # generate all plots
-    └── render_report.py
+Data for the SF road network is stored under data/sf/ (locally).
+All result figures have been copied into the artifacts/ folder at the repository root.
 
+Repository layout (simplified):
 
-2. Installation
+artifacts/
 
-Create virtual environment
+error_bins.png
+
+expansion_bars.png
+
+inference_times.png
+
+mlp_error_coords.png
+
+mlp_error_coords_diff.png
+
+mlp_metrics.png
+
+mlp_scatter_coords.png
+
+mlp_scatter_coords_diff.png
+
+data/sf/
+
+graph.gpickle – road network graph (nodes and edges)
+
+node_features.csv – node features (e.g., coordinates)
+
+pairs.csv – source–target node pairs for training and evaluation
+
+landmark_distances.npz – precomputed landmark-based distances
+
+src/
+
+data/ – data loading utilities
+
+evaluation/ – evaluation functions and summary generation
+
+models/ – definitions of MLP and GNN models
+
+training/ – training loops for the different models
+
+utils/ – helper functions
+
+scripts/
+
+run_experiments.py – main entry point for running experiments
+
+generate_dataset.py – dataset generation or preprocessing (if needed)
+
+analyze_error_bins.py – analysis of error by distance bins
+
+expansion_analysis.py – node expansion statistics for search algorithms
+
+plot_results.py – script for generating result figures
+
+render_report.py – optional report or summary rendering
+
+3. Environment Setup
+
+Create and activate a virtual environment (Windows example):
 
 python -m venv .venv
-.\.venv\Scripts\activate  
+.\.venv\Scripts\activate
 
-Install dependencies
+
+Install dependencies:
 
 pip install -r requirements.txt
 
-3. Running Experiments
 
-(1) Run classical algorithms (baseline)
+Make sure you run all commands from the project root with the virtual environment activated.
+
+4. Running Experiments
+4.1 Classical Baselines: Dijkstra and A*
+
+Run exact routing baselines:
 
 python scripts/run_experiments.py --data_dir data/sf --run_baselines
 
-(2) Train MLP model
 
+This evaluates Dijkstra and A* on the SF dataset and stores the results under data/sf/ and then exported plots into artifacts/.
+
+4.2 Train the MLP Model
 python scripts/run_experiments.py --data_dir data/sf --run_mlp
 
-(3) Train GNN model
 
+This trains the MLP model using node-based features such as raw coordinates (coords) and coordinate differences (coords_diff).
+
+4.3 Train the GNN Model
 python scripts/run_experiments.py --data_dir data/sf --run_gnn
 
-(4) Generate all plots
 
+This trains the GNN model on the SF graph and evaluates it on the same node pairs.
+
+4.4 Generate Plots
 python scripts/run_experiments.py --data_dir data/sf --gen_plots
 
-All outputs will appear in: data/sf/artifacts/
 
-4. Results
+This aggregates evaluation results and produces all figures used in the analysis.
+The figures are then available in the artifacts/ directory.
 
-Below are key results generated from the dataset.  
-All plots are stored in the artifacts/ folder of the repository.
+5. Results
 
-4.1 MLP Metrics Across Feature Sets  
-This plot compares MLP performance using two types of input features:
-- coords (raw coordinates)
-- coords_diff (coordinate differences)
+All the following figures are generated by the pipeline and stored in the artifacts/ folder in this repository.
 
-The coords_diff version dramatically improves RMSE and MAE.
+5.1 MLP Metrics Across Feature Sets
 
-![MLP metrics](artifacts/mlp_metrics.png)
+This figure compares MLP performance using:
 
+coords – raw node coordinates
 
-4.2 Algorithm Inference Time  
-This figure compares running time of:
-- Dijkstra
-- A*
-- MLP
-- GNN
+coords_diff – coordinate differences between source and target
 
-MLP and GNN achieve millisecond-level inference, much faster than classical routing algorithms.
+Using coords_diff leads to significantly lower prediction error.
 
-![Inference times](artifacts/inference_times.png)
+5.2 Inference Time Comparison
 
+This figure compares inference time for the following methods:
 
-4.3 Error by Distance Bins  
-This figure shows prediction error (MAE) grouped by true distance range.
+Dijkstra
+
+A*
+
+MLP
+
+GNN
+
+Classical algorithms (Dijkstra, A*) are much slower, while MLP and GNN achieve millisecond-level inference.
+
+5.3 Error by Distance Bins
+
+This figure shows prediction error (for example MAE) grouped by true distance ranges.
+It illustrates how model performance changes with the length of the ground-truth path.
 
 Main observations:
-- GNN error increases with distance
-- MLP (coords_diff) stays relatively stable
 
-![Error bins](artifacts/error_bins.png)
+GNN error tends to increase for longer distances.
 
+MLP with coords_diff features remains more stable across distance bins.
 
-4.4 MLP Error vs True Distance (coords)  
-Using raw coords as features leads to large systematic bias in the prediction errors.
+5.4 MLP Error vs True Distance (coords)
 
-![MLP error coords](artifacts/mlp_error_coords.png)
+Error versus true distance for the MLP model when using raw coordinates as input features.
+The plot shows substantial error and noticeable bias.
 
+5.5 MLP Error vs True Distance (coords_diff)
 
-4.5 MLP Error vs True Distance (coords_diff)  
-Using coordinate differences instead of raw coordinates reduces both bias and variance in the errors.
+Error versus true distance for the MLP model when using coordinate differences as input features.
+Compared with raw coordinates, errors are smaller and less biased, showing that coords_diff is a better representation for this task.
 
-![MLP error coords diff](artifacts/mlp_error_coords_diff.png)
+5.6 Prediction Scatter Plot (coords)
 
+Scatter plot of true distance versus predicted distance for the MLP model using raw coordinates.
+The points deviate significantly from the diagonal, indicating that the model struggles with this feature choice.
 
-4.6 Prediction Scatter Plot (coords)  
-Scatter plot of true distance versus predicted distance using raw coords.  
-Predictions deviate significantly from the ideal diagonal, indicating underestimation and bias.
+5.7 Prediction Scatter Plot (coords_diff)
 
-![MLP scatter coords](artifacts/mlp_scatter_coords.png)
+Scatter plot of true distance versus predicted distance for the MLP model using coordinate differences.
+The points align much more closely with the diagonal, demonstrating a substantial improvement in prediction quality.
 
+5.8 Node Expansions for Dijkstra vs A*
 
-4.7 Prediction Scatter Plot (coords_diff)  
-Scatter plot of true distance versus predicted distance using coords_diff.  
-The points align much more closely with the diagonal, showing strong improvement in model quality.
+This figure compares the number of expanded nodes and frontier sizes for Dijkstra and A*.
+A* consistently expands fewer nodes than Dijkstra, confirming its efficiency advantage on this road network.
 
-![MLP scatter coords diff](artifacts/mlp_scatter_coords_diff.png)
+6. Key Findings
 
+A* is significantly faster than Dijkstra in both node expansions and runtime.
 
-4.8 Node Expansions: Dijkstra vs A*  
-This bar chart shows the average number of nodes expanded and frontier sizes for Dijkstra and A*.  
-A* expands far fewer nodes than Dijkstra, which confirms its higher efficiency on this road network.
+MLP with coords_diff provides the best trade-off between accuracy and computation cost.
 
-![Node expansions](artifacts/expansion_bars.png)
+The GNN model captures graph structure but can struggle on longer paths compared with a well-engineered MLP.
 
-5. Key Findings
+Feature engineering (e.g., using coordinate differences) has a strong impact on performance.
 
-- A* is significantly faster than Dijkstra for shortest-path estimation.  
-- MLP using coords_diff provides the best trade-off between accuracy and computation time.  
-- GNN performs reasonably well but struggles with longer distances.  
-- Feature engineering has a larger impact than model choice.  
-- Machine learning models offer millisecond-level inference time, suitable for large-scale applications.  
-- Hybrid approaches combining ML prediction with classical search may offer further improvements.
+Once trained, MLP and GNN models offer very fast inference and scale well to large datasets.
 
-
-6. Team Members
-   
-
-
-
-
-
-
+A promising future direction is to combine ML predictions with classical search, for example using ML to approximate distances and A* to refine the final path.
 
 
 
