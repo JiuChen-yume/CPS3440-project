@@ -109,46 +109,61 @@ As shown by the metrics, the GNN not only takes longer to run inference (~0.055 
 
 ### 5.4 Overall MLP Metrics
 
-Overall regression performance of the MLP model (e.g., RMSE, MAE, R²).
+This figure summarises the main regression metrics of the final MLP configuration, including RMSE, MAE, MAPE and possibly additional indicators such as R².  
+Together, these metrics show that the model is consistently accurate across different error measures: RMSE and MAE remain at a moderate level, while MAPE indicates that the relative error is small compared to the typical target value.  
+This global view supports the conclusion that the tuned MLP is stable and accurate enough to be used as the main predictive component in the system.
 
 ![MLP metrics](artifacts/mlp_metrics.png)
 
 ### 5.5 Error Bins
 
-Binned distribution of prediction errors.
+This histogram groups prediction errors into bins and shows how many samples fall into each error range.  
+Most samples concentrate in the low-error bins around zero, which means that for the majority of cases the model prediction is close to the ground truth.  
+Only a small portion of samples fall into the large-error bins; these outliers correspond to difficult cases where the current features or model capacity are not sufficient.  
+Such a view is useful for diagnosing whether the model is generally unreliable or mainly struggles with a few rare patterns.
 
 ![Error bins](artifacts/error_bins.png)
 
 ### 5.6 MLP Error Coordinates
 
-Absolute prediction error over spatial coordinates.
+This plot visualises the absolute prediction error over spatial coordinates. Each point corresponds to a location, coloured or sized according to the magnitude of its error.  
+By inspecting this figure we can see whether errors are uniformly distributed or concentrated in specific regions of the space (for example, at the boundary of the map or in very dense areas).  
+Regions with systematically higher errors can indicate missing features (e.g., local traffic patterns) or distribution shift, and they provide a clear target for future data collection or model refinement.
 
 ![MLP error coordinates](artifacts/mlp_error_coords.png)
 
 ### 5.7 MLP Error Coordinates (Difference)
 
-Difference in error over spatial coordinates.
+Here we plot the difference in error between two configurations (e.g., `coords` vs `coords_diff`) over the same coordinate space.  
+Locations where the value is negative represent points where the new configuration reduces error, while positive values indicate places where it becomes slightly worse.  
+This comparison helps to understand *where* the feature change brings improvement: instead of only seeing average metrics, we can identify regions of the map that benefit the most from the new features and regions where the effect is neutral.
 
 ![MLP error coords diff](artifacts/mlp_error_coords_diff.png)
 
 ### 5.8 MLP Scatter Coordinates
 
-Scatter plot of predictions vs. ground truth over coordinates.
+This scatter plot compares predicted values with ground-truth values over coordinates. Points close to the diagonal line correspond to accurate predictions, while points far from the diagonal indicate larger errors.  
+The overall shape of the cloud shows how well the model captures the relationship between input features and targets; a tight cluster around the diagonal means that the model rarely over- or under-estimates by a large margin.  
+This figure complements the numerical metrics by providing an intuitive visual check of model calibration.
 
 ![MLP scatter coordinates](artifacts/mlp_scatter_coords.png)
 
 ### 5.9 MLP Scatter Coordinates (Difference)
 
-Difference in scatter patterns.
+This plot focuses on the change in scatter patterns between two model or feature configurations.  
+By highlighting where points move closer to or further from the diagonal, it becomes clear in which parts of the target range the new configuration improves performance (for example, high-value or low-value regions).  
+In combination with the previous scatter plot, this helps explain *how* the optimisation of the MLP affects different kinds of samples, not just the global average metrics.
 
 ![MLP scatter coords diff](artifacts/mlp_scatter_coords_diff.png)
 
 ### 5.10 Expansion Bars
 
-Expansion behaviour visualised as bar plots.
+The expansion bar chart summarises model behaviour or resource usage under different expansion settings (for example, different numbers of layers, hidden units, or expansion factors).  
+Each bar represents a configuration, and the values can correspond to performance, memory usage, or another quantity of interest.  
+From this figure we can quickly see which configurations give the best trade-off between accuracy and cost: extremely large models might offer only marginal accuracy gains while significantly increasing training or inference cost.  
+This supports the choice of the final MLP size used in the project.
 
 ![Expansion bars](artifacts/expansion_bars.png)
-
 
 ## 6. Project Notes
 
