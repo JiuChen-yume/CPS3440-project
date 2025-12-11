@@ -85,67 +85,70 @@ python scripts/evaluate_mlp.py \
 
 ## 5. Results
 
-### 5.1 Feature Comparison: `coords` vs `coords_diff`
+### 5.1 Algorithm Comparison: Shortest Path vs Learned Models
+
+This table compares classic shortest-path algorithms (Dijkstra and A*) with the learned models (MLP and GNN).  
+After hyperparameter tuning, the MLP achieves RMSE ≈ 546 and MAPE ≈ 0.08. This error level is small enough for the target application, while the inference time is around 0.03 s, which is several orders of magnitude faster than Dijkstra (~70 s) and A* (~28 s).  
+The GNN, in contrast, still has much larger errors (RMSE > 3200, MAPE > 0.63) and slightly slower inference than the MLP, so it is kept only as an experimental baseline and is not used in the final system.
+
+![Algorithm metrics](artifacts/metrics_table_en_wide_last_col.png)
+
+### 5.2 MLP Feature Ablation Results: `coords` vs `coords_diff`
 
 This table compares two feature sets for the MLP: using raw coordinates (`coords`) versus coordinate differences (`coords_diff`).  
 `coords_diff` dramatically reduces the error (RMSE from ~2827 to ~529 and MAPE from ~0.48 to ~0.08), at the cost of a much longer training time and a larger model (more epochs and a bigger hidden dimension). This suggests that difference-based features capture more informative structure for the regression task, even though they are more expensive to train.
 
 ![MLP feature results](artifacts/mlp_feature_results_en_wide.png)
 
-### 5.2 Algorithm Comparison: Shortest Path vs Learned Models
+### 5.3 GNN Training and Inference Information
 
-This table compares classic shortest-path algorithms (Dijkstra and A*) with learned models (MLP and GNN).  
-Dijkstra and A* achieve zero error by construction but have very long inference times (around 70 s and 28 s). The MLP has small but non-zero errors (RMSE ≈ 546, MAPE ≈ 0.08) while its inference time is orders of magnitude faster (~0.03 s), making it a practical approximation when many queries are needed. The GNN in this setup is slower and less accurate than the MLP, indicating that its current architecture or training regime is not yet competitive.
+The GNN model is trained on graph-structured data, which makes each training step and inference pass more expensive than for the MLP.  
+As shown by the metrics, the GNN not only takes longer to run inference (~0.055 s per query) but also produces much higher errors than the optimised MLP. Therefore, in this project the GNN is treated as an exploratory model rather than the main solution, and the final system relies on the faster and more accurate MLP.
 
-![Algorithm metrics](artifacts/metrics_table_en_wide_last_col.png)
+![Inference times](artifacts/inference_times.png)
 
-### 5.3 Overall MLP Metrics
+### 5.4 Overall MLP Metrics
 
 Overall regression performance of the MLP model (e.g., RMSE, MAE, R²).
 
 ![MLP metrics](artifacts/mlp_metrics.png)
 
-### 5.4 Error Bins
+### 5.5 Error Bins
 
 Binned distribution of prediction errors.
 
 ![Error bins](artifacts/error_bins.png)
 
-### 5.5 MLP Error Coordinates
+### 5.6 MLP Error Coordinates
 
 Absolute prediction error over spatial coordinates.
 
 ![MLP error coordinates](artifacts/mlp_error_coords.png)
 
-### 5.6 MLP Error Coordinates (Difference)
+### 5.7 MLP Error Coordinates (Difference)
 
 Difference in error over spatial coordinates.
 
 ![MLP error coords diff](artifacts/mlp_error_coords_diff.png)
 
-### 5.7 MLP Scatter Coordinates
+### 5.8 MLP Scatter Coordinates
 
 Scatter plot of predictions vs. ground truth over coordinates.
 
 ![MLP scatter coordinates](artifacts/mlp_scatter_coords.png)
 
-### 5.8 MLP Scatter Coordinates (Difference)
+### 5.9 MLP Scatter Coordinates (Difference)
 
 Difference in scatter patterns.
 
 ![MLP scatter coords diff](artifacts/mlp_scatter_coords_diff.png)
 
-### 5.9 Expansion Bars
+### 5.10 Expansion Bars
 
 Expansion behaviour visualised as bar plots.
 
 ![Expansion bars](artifacts/expansion_bars.png)
 
-### 5.10 Inference Times
-
-Comparison of inference times for different settings.
-
-![Inference times](artifacts/inference_times.png)
 
 ## 6. Project Notes
 
