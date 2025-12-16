@@ -29,7 +29,7 @@ The figure below is a simple illustration of shortest-path reasoning on a graph.
 A more intuitive view is grid-style pathfinding, where the goal is to move from start to destination with minimal cost.  
 This helps explain why learned models can be useful as fast approximators when exact search becomes expensive.
 
-![Grid pathfinding illustration](artifacts/pathfinding-grid-graph.png)
+![Grid pathfinding illustration](artifacts/path.png)
 
 ## 2. Repository Structure
 
