@@ -14,6 +14,23 @@ The project includes:
 - Visual analysis of prediction errors and spatial patterns  
 - Comparison of inference times and model expansion behaviour  
 
+### Visual Motivation: Road Network and Shortest-Path Intuition
+
+The core setting of this project is closely related to routing on a city road network.  
+We use San Francisco as a spatial example, where intersections can be treated as nodes and roads as edges.
+
+![San Francisco road map](artifacts/san-francisco-street-map.jpg)
+
+Classic shortest-path algorithms (such as Dijkstra and A*) search over a weighted graph to find the optimal route.  
+The figure below is a simple illustration of shortest-path reasoning on a graph.
+
+![Shortest path on a weighted graph](artifacts/d4134d5eda4c89d924274f0c70a7d50b.jpg)
+
+A more intuitive view is grid-style pathfinding, where the goal is to move from start to destination with minimal cost.  
+This helps explain why learned models can be useful as fast approximators when exact search becomes expensive.
+
+![Grid pathfinding illustration](artifacts/pathfinding-grid-graph.png)
+
 ## 2. Repository Structure
 
 ```text
